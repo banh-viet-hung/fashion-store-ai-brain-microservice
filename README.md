@@ -1,10 +1,10 @@
-# RAG Chatbot với LangGraph
+# Fashion Store Product Chatbot
 
-Dự án này triển khai một hệ thống Retrieval Augmented Generation (RAG) sử dụng LangChain và LangGraph, kết hợp với mô hình Gemini của Google.
+Dự án này triển khai một hệ thống Retrieval Augmented Generation (RAG) sử dụng LangChain và LangGraph, kết hợp với mô hình Gemini của Google để tạo chatbot thông minh về sản phẩm thời trang.
 
 ## Tính năng
 
-- **Hệ thống RAG**: Lấy và chỉ mục nội dung blog để AI truy xuất
+- **Hệ thống RAG**: Truy xuất thông tin từ catalog sản phẩm PDF
 - **Agent thông minh**: Sử dụng framework ReAct của LangGraph để đưa ra quyết định suy luận
 - **Chat có trạng thái**: Duy trì ngữ cảnh hội thoại qua các tương tác
 - **Suy luận nhiều bước**: Có thể thực hiện nhiều bước truy xuất cho các câu hỏi phức tạp
@@ -31,12 +31,14 @@ npm install
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
+4. Thêm file PDF catalog sản phẩm vào thư mục `product-pdfs/`
+
 ## Cấu trúc dự án
 
 ```
 ├── src/
 │   ├── agent.ts         # Triển khai Agent sử dụng LangGraph
-│   ├── data-processor.ts # Xử lý và tải dữ liệu cho RAG
+│   ├── data-processor.ts # Xử lý và tải dữ liệu PDF cho RAG
 │   ├── index.ts         # Entry point cho server
 │   ├── models.ts        # Khởi tạo mô hình LLM và Embedding
 │   ├── server.ts        # Cấu hình Express server
@@ -45,6 +47,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 │   ├── index.html      # Trang HTML chính
 │   ├── styles.css      # CSS styles
 │   ├── app.js          # Frontend JavaScript
+├── product-pdfs/       # Thư mục chứa catalog PDF sản phẩm
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -52,10 +55,10 @@ GOOGLE_API_KEY=your_google_api_key_here
 
 ## Hoạt động của hệ thống
 
-1. **Chỉ mục dữ liệu**: Tải xuống và xử lý nội dung blog từ Lilian Weng
+1. **Chỉ mục dữ liệu**: Tải và xử lý catalog sản phẩm từ các file PDF
 2. **Lưu trữ vector**: Tạo embeddings và lưu trữ trong vector database
-3. **Cấu hình Agent**: Thiết lập agent ReAct với khả năng truy xuất
-4. **Xử lý truy vấn**: Nhận câu hỏi từ người dùng và xác định:
+3. **Cấu hình Agent**: Thiết lập agent ReAct với khả năng truy xuất thông tin sản phẩm
+4. **Xử lý truy vấn**: Nhận câu hỏi từ người dùng về sản phẩm và xác định:
    - Khi nào có thể trả lời trực tiếp
    - Khi nào cần truy xuất thông tin
    - Cách tạo truy vấn truy xuất tốt
@@ -76,6 +79,7 @@ Server sẽ khởi động và có sẵn tại http://localhost:4444
 - Sử dụng mô hình Gemini 2.5 Flash của Google
 - Sử dụng mô hình text-embedding-004 của Google cho embeddings
 - Triển khai mẫu Agent ReAct qua LangGraph
+- Xử lý và chỉ mục dữ liệu từ các file PDF catalog sản phẩm
 - Sử dụng MemoryVectorStore cho lưu trữ vector
 - Duy trì trạng thái bằng MemorySaver của LangGraph
 - Frontend được xây dựng với HTML, CSS, và JavaScript thuần

@@ -2,35 +2,84 @@ import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import type { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
+import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
+import fs from "fs";
+import path from "path";
 
 /**
- * Downloads and processes blog content for RAG
+ * Loads and processes PDF files from a directory for product information
  */
-export async function processLilianWengBlog(vectorStore: MemoryVectorStore) {
-    console.log("Loading blog data from Lilian Weng...");
+export async function processProductPDFs(vectorStore: MemoryVectorStore, pdfDirectory: string = './product-pdfs') {
+    console.log(`Loading product PDFs from ${pdfDirectory}...`);
 
-    // Load blog content using Cheerio
-    const cheerioLoader = new CheerioWebBaseLoader(
-        "https://lilianweng.github.io/posts/2023-06-23-agent/",
-        { selector: "p" } // Only extract <p> tag content
-    );
+    // Create directory if it doesn't exist
+    if (!fs.existsSync(pdfDirectory)) {
+        fs.mkdirSync(pdfDirectory, { recursive: true });
+        console.log(`Created directory ${pdfDirectory}`);
+        console.log("Please add your product PDF files to this directory");
+        return vectorStore;
+    }
 
-    const docs = await cheerioLoader.load();
-    console.log(`Loaded ${docs.length} document(s)`);
+    // Get all PDF files in the directory
+    const files = fs.readdirSync(pdfDirectory).filter(file => file.toLowerCase().endsWith('.pdf'));
 
-    // Split documents into smaller chunks
+    if (files.length === 0) {
+        console.log("No PDF files found in the directory. Please add your product PDF files.");
+        return vectorStore;
+    }
+
+    console.log(`Found ${files.length} PDF file(s)`);
+
+    // Configure text splitter for better information retrieval
     const splitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 1000,
-        chunkOverlap: 200,
+        chunkSize: 500,           // Smaller chunks for more precise retrieval
+        chunkOverlap: 200,        // Higher overlap to maintain context between chunks
+        separators: ["\n\n", "\n", ". ", ", ", " ", ""],  // Custom separators for better semantic chunks
     });
 
-    const allSplits = await splitter.splitDocuments(docs);
-    console.log(`Split into ${allSplits.length} chunks`);
+    // Process each PDF file
+    let totalChunks = 0;
+    for (const file of files) {
+        const filePath = path.join(pdfDirectory, file);
+        console.log(`Processing ${filePath}...`);
 
-    // Add to vector store
-    await vectorStore.addDocuments(allSplits);
-    console.log("Documents added to vector store");
+        try {
+            // Load PDF file
+            const loader = new PDFLoader(filePath, {
+                splitPages: true,  // Split by page for better organization
+            });
+            const docs = await loader.load();
+            console.log(`Loaded ${docs.length} page(s) from ${file}`);
 
+            // Split documents into smaller chunks
+            const splits = await splitter.splitDocuments(docs);
+            console.log(`Split ${file} into ${splits.length} chunks`);
+            totalChunks += splits.length;
+
+            // Add metadata to identify the source file
+            const enhancedSplits = splits.map(split => {
+                // Extract page number if available
+                const pageNumber = split.metadata.loc?.pageNumber || split.metadata.page || null;
+
+                // Add detailed metadata
+                split.metadata = {
+                    ...split.metadata,
+                    source: file,
+                    documentType: 'product',
+                    page: pageNumber,
+                    chunkId: `${file}-${pageNumber || 'unknown'}-${Math.random().toString(36).substring(2, 7)}`,
+                };
+                return split;
+            });
+
+            // Add to vector store
+            await vectorStore.addDocuments(enhancedSplits);
+        } catch (error) {
+            console.error(`Error processing ${file}:`, error);
+        }
+    }
+
+    console.log(`Total: ${totalChunks} chunks added to vector store from ${files.length} files`);
     return vectorStore;
 }
 
@@ -41,8 +90,8 @@ export async function loadData(embeddings: GoogleGenerativeAIEmbeddings) {
     // Create vector store
     const vectorStore = new MemoryVectorStore(embeddings);
 
-    // Process blog data
-    await processLilianWengBlog(vectorStore);
+    // Process product PDF data
+    await processProductPDFs(vectorStore);
 
     return vectorStore;
 } 

@@ -19,6 +19,7 @@
         "dotenv": "latest",
         "express": "^4.18.2",
         "langchain": "latest",
+        "pdf-parse": "^1.1.1",
         "zod": "latest"
     },
     "devDependencies": {
