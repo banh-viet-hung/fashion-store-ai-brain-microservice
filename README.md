@@ -69,7 +69,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 npm start
 ```
 
-Server sẽ khởi động và có sẵn tại http://localhost:3000
+Server sẽ khởi động và có sẵn tại http://localhost:4444
 
 ## Chi tiết triển khai
 

@@ -31,23 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Show typing indicator
-    function showTypingIndicator(status = 'thinking') {
+    function showTypingIndicator() {
         const typingDiv = document.createElement('div');
         typingDiv.className = 'typing';
         typingDiv.id = 'typingIndicator';
-
-        if (status === 'retrieving') {
-            // Hiển thị hiệu ứng thu thập thông tin
-            typingDiv.innerHTML = '<span style="margin-right:8px;">🔎</span> <span>Đang thu thập thông tin...</span>';
-        } else {
-            // Hiệu ứng ba chấm như cũ
-            for (let i = 0; i < 3; i++) {
-                const dot = document.createElement('div');
-                dot.className = 'dot';
-                typingDiv.appendChild(dot);
-            }
+        // Luôn hiển thị hiệu ứng ba chấm
+        for (let i = 0; i < 3; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            typingDiv.appendChild(dot);
         }
-
         chatMessages.appendChild(typingDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
@@ -62,8 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Send message to server
     async function sendMessage(message) {
-        let currentStatus = 'thinking';
-        showTypingIndicator(currentStatus);
+        showTypingIndicator();
         try {
             const response = await fetch('/api/chat', {
                 method: 'POST',
@@ -75,20 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     sessionId
                 }),
             });
-
             if (!response.ok) {
                 throw new Error('Server error');
             }
-
             const data = await response.json();
-
-            // Nếu status khác với status hiện tại thì cập nhật hiệu ứng
-            if (data.status && data.status !== currentStatus) {
-                hideTypingIndicator();
-                showTypingIndicator(data.status);
-                currentStatus = data.status;
-            }
-            // Đợi một chút để user thấy hiệu ứng (tùy chỉnh nếu muốn)
             setTimeout(() => {
                 hideTypingIndicator();
                 addMessage(data.response, 'bot');
