@@ -75,13 +75,27 @@ app.post("/api/chat", async (req, res) => {
             config
         );
 
+        // Determine agent status chỉ kiểm tra message cuối cùng
+        let status = "thinking";
+        const lastMsg = result.messages[result.messages.length - 1];
+        if (
+            (lastMsg.tool_calls && lastMsg.tool_calls.length > 0) ||
+            (lastMsg.functionCall && Object.keys(lastMsg.functionCall).length > 0)
+        ) {
+            status = "retrieving";
+            console.log("[Agent] Đang gọi tool:",
+                lastMsg.tool_calls ? JSON.stringify(lastMsg.tool_calls) : JSON.stringify(lastMsg.functionCall)
+            );
+        }
+
         // Extract AI message content
         const aiMessageIndex = result.messages.length - 1;
         const aiMessage = result.messages[aiMessageIndex].content;
 
         res.json({
             response: aiMessage,
-            sessionId: userId
+            sessionId: userId,
+            status
         });
     } catch (error: any) {
         console.error("Error processing chat:", error);

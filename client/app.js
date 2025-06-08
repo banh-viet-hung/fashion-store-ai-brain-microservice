@@ -31,15 +31,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Show typing indicator
-    function showTypingIndicator() {
+    function showTypingIndicator(status = 'thinking') {
         const typingDiv = document.createElement('div');
         typingDiv.className = 'typing';
         typingDiv.id = 'typingIndicator';
 
-        for (let i = 0; i < 3; i++) {
-            const dot = document.createElement('div');
-            dot.className = 'dot';
-            typingDiv.appendChild(dot);
+        if (status === 'retrieving') {
+            // Hiển thị hiệu ứng thu thập thông tin
+            typingDiv.innerHTML = '<span style="margin-right:8px;">🔎</span> <span>Đang thu thập thông tin...</span>';
+        } else {
+            // Hiệu ứng ba chấm như cũ
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                typingDiv.appendChild(dot);
+            }
         }
 
         chatMessages.appendChild(typingDiv);
@@ -56,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Send message to server
     async function sendMessage(message) {
+        let currentStatus = 'thinking';
+        showTypingIndicator(currentStatus);
         try {
-            showTypingIndicator();
-
             const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: {
@@ -76,9 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
 
-            hideTypingIndicator();
-            addMessage(data.response, 'bot');
-
+            // Nếu status khác với status hiện tại thì cập nhật hiệu ứng
+            if (data.status && data.status !== currentStatus) {
+                hideTypingIndicator();
+                showTypingIndicator(data.status);
+                currentStatus = data.status;
+            }
+            // Đợi một chút để user thấy hiệu ứng (tùy chỉnh nếu muốn)
+            setTimeout(() => {
+                hideTypingIndicator();
+                addMessage(data.response, 'bot');
+            }, 600);
         } catch (error) {
             hideTypingIndicator();
             console.error('Error:', error);
