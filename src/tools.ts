@@ -12,12 +12,22 @@ export function createRetrieveTool(vectorStore: MemoryVectorStore) {
         async ({ query }) => {
             console.log(`Retrieving product information for query: "${query}"`);
 
-            // Increase the number of returned documents for better context
-            const retrievedDocs = await vectorStore.similaritySearch(query, 4);
+            // 1. Increase the number of initial results to get a broader context
+            const K = 50;
+            const initialDocs = await vectorStore.similaritySearch(query, K);
 
-            if (retrievedDocs.length === 0) {
+            if (initialDocs.length === 0) {
                 return "No relevant product information found. Please try a different query or check if product PDF files have been loaded.";
             }
+
+            // 2. Re-rank the results based on relevance to the query keywords
+            // This helps to filter out documents that are semantically similar but not directly relevant.
+            const rerankedDocs = initialDocs.filter(doc =>
+                doc.pageContent.toLowerCase().includes(query.toLowerCase())
+            );
+
+            // Use re-ranked docs if they exist, otherwise fall back to initial results
+            const retrievedDocs = rerankedDocs.length > 0 ? rerankedDocs : initialDocs;
 
             // Group content by source document
             const groupedBySource: Record<string, string[]> = {};
