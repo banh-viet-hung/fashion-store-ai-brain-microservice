@@ -1,0 +1,4253 @@
+{
+  "message": "Lấy danh sách sản phẩm thành công",
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Áo thun thể thao Jacquard Seamless New",
+      "description": "\u003Cp\u003EÁo thun thể thao thoáng mát, thấm hút mồ hôi nhanh chóng để giữ cho bạn luôn khô ráo, sẵn sàng luyện tập. \u003C/p\u003E\n\u003Cp\u003E- Công nghệ: Ex-Dry\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: 80% Polyamide, 20% Spandex\u003C/p\u003E\n\u003Cp\u003E- Kiểu dáng: Regular fit\u003C/p\u003E\n\u003Cp\u003E- Phù hợp: Mặc tập thể thao\u003C/p\u003E\n\u003Cp\u003E- Tính năng: Thoải mái và thoáng khí\u003C/p\u003E\n",
+      "price": 349000,
+      "salePrice": 329000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": [
+        {
+          "id": 17,
+          "rating": 5,
+          "color": "Đen",
+          "size": "S",
+          "comment": "Sản phẩm chất lượng",
+          "createdAt": "2025-04-21T21:33:21.208956",
+          "userName": "Duy"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tất bóng đá cổ cao",
+      "description": "\u003Cp\u003ETất mềm mại, thoáng khí, có lớp chống trượt, với độ bám dính tốt. Đây là món phụ kiện không thể thiếu cho môn thể thao vua\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: Độ dày vừa phải, có độ ôm sát hoàn hảo,, không bó sát nhưng vẫn ôm chắc vào cổ chân\u003C/p\u003E\n\u003Cp\u003E- Công dụng: Tất có phần chống trượt, có công dụng bám chắc khi hoạt động\u003C/p\u003E\n\u003Cp\u003E- Thiết kế: Tất được thiết kế với các mảng màu và họa tiết cắt xẻ nổi bật, tăng tính thẩm mỹ và cảm hứng khi chơi thể thao\u003C/p\u003E\n",
+      "price": 60000,
+      "salePrice": 55000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 3,
+      "name": "Headband thể thao",
+      "description": "\u003Cp\u003EHeadband Thể thao có khả năng thấm hút mồ hôi tốt, mềm mại giúp da luôn thoải mái. Đây là một phụ kiện không thể thiếu khi chơi thể thao\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: Mềm mại và thấm hút mồ hôi tốt.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế: Logo thêu nổi bật ở mặt trước có tính thẩm mỹ cao.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tính năng: Co giãn tốt, ôm vừa vặn giúp vận động thể thao thoải mái. Sản phẩm có độ bền cao và không phai màu.\u003C/p\u003E\n",
+      "price": 79000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 4,
+      "name": "Wristband thể thao",
+      "description": "\u003Cp\u003EWristband thể thao có khả năng thấm hút mồ hôi tốt, mềm main, giúp da luôn thoải mái. Đây là một phụ kiện không thể thiếu khi chơi thể thao\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: Mềm mại và thấm hút mồ hôi tốt.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế: Logo thêu nổi bật ở mặt trước có tính thẩm mỹ cao.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tính năng: Co giãn tốt, ôm vừa vặn giúp vận động thể thao thoải mái. Sản phẩm có độ bền cao và không phai màu.\u003C/p\u003E\n",
+      "price": 59000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 5,
+      "name": "Combo 2 Tất Thể Thao Cổ Trung Cushion",
+      "description": "\u003Cp\u003ECông nghệ dệt hiện đại, tạo nên vô số lỗ nhỏ trên bề mặt vải, tăng sự thoáng khi\u003C/p\u003E\n\u003Cp\u003E- Đệm bàn chân: Gót chân được may dày hơn giúp êm ái và bảo vệ gót tốt\u003C/p\u003E\n\u003Cp\u003E- Dệt mesh: Thoáng khí, thấm hút mồ hôi tốt hơn\u003C/p\u003E\n",
+      "price": 119000,
+      "salePrice": 104000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 6,
+      "name": "Mũ Lưỡi Trai Cotton Thêu Logo",
+      "description": "\u003Cp\u003E- Chất liệu: 100% Cotton hạn chế xù lông và bạc màu\u003C/p\u003E\n\u003Cp\u003E- Form cứng, có định hình\u003C/p\u003E\n\u003Cp\u003E- Lưỡi nón: Có độ dẻo dai giúp không bị gãy khi va chạm\u003C/p\u003E\n\u003Cp\u003E- Khoá nón: Làm từ kim loại khắc logo được phủ lớp nhám chống gì sét\u003C/p\u003E\n",
+      "price": 179000,
+      "salePrice": 109000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Mũ/Nón"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 7,
+      "name": "Túi Tote Canvas in logo Coolmate",
+      "description": "\u003Cp\u003EThiết kế đơn giản, không gian rộng rãi cho bạn thoải mái đựng đồ cá nhân\u003C/p\u003E\n\u003Cp\u003E- Vải Canvas 100% Cotton\u003C/p\u003E\n\u003Cp\u003E- Đựng vừa laptop đến 17 inch\u003C/p\u003E\n\u003Cp\u003E- Kích thước 30 x 40 x 10 cm\u003C/p\u003E\n\u003Cp\u003E- Chất liệu thân thiện môi trường\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 79000,
+      "averageRating": 4,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Kem"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": [
+        {
+          "id": 18,
+          "rating": 4,
+          "color": "Kem",
+          "size": "L",
+          "comment": "",
+          "createdAt": "2025-04-22T11:40:37.550279",
+          "userName": "Duy"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tất Nam Cổ Trung Tập Gym Essentials",
+      "description": "\u003Cp\u003ETất Gym Cổ Trung Chống Trượt Essentials là mẫu tất nam được làm từ chất liệu cotton tổng hợp mềm mịn, thoáng khí cùng khả năng chống trượt, mang đến cho người mang cảm giác thoải mái.\u003C/p\u003E\n\u003Cp\u003E1. Chất liệu bền bỉ cao cấp:\u003C/p\u003E\n\u003Cp\u003ETất Gym Cổ Trung Chống Trượt Essentials vừa bền bỉ, vừa thoáng khí, mang đến cảm giác khô ráo, lại mềm mại và ít xù lông,  bảo vệ bàn chân của phái mạnh tốt hơn.\u003C/p\u003E\n\u003Cp\u003ETất được làm từ 58% Cotton, 36% Polyester, 3% Elastane, 2% Silicon, 1% Elastodiene, với công nghệ dệt hiện đại giúp tăng độ thoáng khí và khử mùi hôi.\u003C/p\u003E\n\u003Cp\u003EBề mặt với vô số lỗ nhỏ thoáng khí kết hợp với thành phần cotton giúp tất có khả năng thấm hút mồ hôi vượt trội.\u003C/p\u003E\n\u003Cp\u003E2. Thiết kế đa năng tiện lợi cho thể thao\u003C/p\u003E\n\u003Cp\u003EThành phần 58% Cotton thoáng khí, hút ẩm với thành phần có độ đàn hồi cao, chịu mài mòn tốt, 3% Elastane giúp co dãn êm ái. Phần mũi và gót chân được làm dày hơn để tăng độ êm ái và bảo vệ bàn chân tốt hơn. Bên cạnh đó, sản phẩm còn có dải Silicon nổi dưới bàn chân giúp gia tăng độ bám, chống trơn trượt hiệu quả.&nbsp;\u003C/p\u003E\n\u003Cp\u003EThiết kế với 3 màu sắc trơn đơn giản fit mọi kiểu giày, tính ứng dụng cao, phù hợp với mọi hoàn cảnh.\u003C/p\u003E\n",
+      "price": 69000,
+      "salePrice": 59000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 9,
+      "name": "Túi Coolmate Clean Bag",
+      "description": "\u003Cp\u003ETúi tote có thể coi là chiếc túi thời trang và tiện lợi. Với mẫu túi này, bạn có thể biến hóa với nhiều phong cách thời trang khác nhau như năng động cá tính hay ngay thanh lịch cũng rất phù hợp. Vì vậy, sở hữu một chiếc túi tote của Coolmate trong tủ đồ sẽ làm đa dạng phụ kiện cho outfit của bạn.\u003C/p\u003E\n\u003Cp\u003EThiết kế đơn giản, không gian rộng rãi cho bạn thoải mái đựng đồ cá nhân\u003C/p\u003E\n\u003Cp\u003E- Đựng vừa laptop đến 17 inch\u003C/p\u003E\n\u003Cp\u003E- Kích thước 30 x 40 x 10 cm\u003C/p\u003E\n\u003Cp\u003E- Chất liệu thân thiện môi trường\u003C/p\u003E\n",
+      "price": 49000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 10,
+      "name": "Túi tote vải Canvas Care & Share",
+      "description": "\u003Cp\u003ETúi tote có thể coi là chiếc túi thời trang và tiện lợi. Với mẫu túi này, bạn có thể biến hóa với nhiều phong cách thời trang khác nhau như năng động cá tính hay ngay cả dịu dàng, nữ tính cũng rất phù hợp. Vì vậy, sở hữu một chiếc túi tote của Coolmate trong tủ đồ sẽ làm đa dạng phụ kiện cho outfit của bạn. Điều đặc biệt của chiếc túi này là hoạ tiết in Care &amp; Share - đây là sản phẩm trong Care &amp; Share Collection.\u003C/p\u003E\n\u003Cp\u003E- Túi tote Care &amp; Share được làm từ chất liệu vải canvas dày dặn, không nhuộm màu, đẹp với đường may vô cùng tỉ mỉ và chắc chắn.\u003C/p\u003E\n\u003Cp\u003E- Phần túi tote đựng được thiết kế rộng rãi giúp bạn có thể đựng nhiều đồ vật như sách, vở, mỹ phẩm, đồ dùng cá nhân, kể cả laptop dưới 15 inch…\u003C/p\u003E\n\u003Cp\u003E- Phần quai đeo tinh tế với độ rộng vừa phải và cân đối.\u003C/p\u003E\n\u003Cp\u003E- Túi tote sở hữu những họa tiết sắc nét vô cùng trẻ trung, hiện đại\u003C/p\u003E\n\u003Cp\u003EVới chiếc túi tote này, bạn hoàn toàn có thể tự tin lựa chọn làm phụ kiện để đi học, đi chơi, du lịch, công tác, …\u003C/p\u003E\n",
+      "price": 119000,
+      "salePrice": 89000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Kem"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 11,
+      "name": "Tất Thể Thao Seamless Cổ Dài",
+      "description": "\u003Cp\u003E- Kiểu dệt lưới thoáng khí mu bàn chân giúp thoáng mát, dễ chịu, không bí hơi\u003C/p\u003E\n\u003Cp\u003E- Mũi và gót chân dệt sợi Polyamide có Quick-Dry nhanh khô, mát mẻ giúp tất không xù lông\u003C/p\u003E\n\u003Cp\u003E- Đệm bàn chân: Công nghệ dệt 2 lớp sợi ở lòng bàn chân giúp tắt bên hơn và êm hơn khi vận động&nbsp;\u003C/p\u003E\n",
+      "price": 69000,
+      "salePrice": 59000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 12,
+      "name": "Tất Thể Thao Seamless Cổ Ngắn",
+      "description": "\u003Cp\u003E- Kiểu dệt lưới thoáng khí mu bàn chân giúp thoáng mát, dễ chịu, không bí hơi\u003C/p\u003E\n\u003Cp\u003E- Mũi và gót chân dệt sợi Polyamide có Quick-Dry nhanh khô, mát mẻ giúp tất không xù lông\u003C/p\u003E\n\u003Cp\u003E- Đệm bàn chân: Công nghệ dệt 2 lớp sợi ở lòng bàn chân giúp tắt bên hơn và êm hơn khi vận động&nbsp;\u003C/p\u003E\n",
+      "price": 69000,
+      "salePrice": 59000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 13,
+      "name": "Combo 10 Đôi Tất Nam Basics",
+      "description": "\u003Cp\u003ECombo 10 tất Cotton Cổ Ngắn Basics được làm từ chất liệu cotton, PE và Spandex. Đặc biệt vải PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton. Tất được thiết kế tinh tế, phần mũi chân, gót chân được làm dày hơn có tác dụng giúp gia tăng độ bền.\u003C/p\u003E\n\u003Cp\u003E1. Combo tất đáng mua nhất\u003C/p\u003E\n\u003Cp\u003ESản phẩm sử dụng chất liệu PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton mang đến cho người dùng những trải nghiệm cực kỳ chất lượng.&nbsp;\u003C/p\u003E\n\u003Cp\u003E2. Chất liệu cao cấp co giãn đàn hồi\u003C/p\u003E\n\u003Cp\u003ETất cổ ngắn được làm từ các chất liệu co giãn, đàn hồi tốt, phù hợp với hầu hết mọi đối tượng người dùng. Thành phần Polyester có trong tất xơ ngắn giúp tất đàn hồi, ít bị mài mòn và xù lông hơn. Kết hợp cùng sợi Cotton mang đến sự êm ái, thấm hút cho từng đôi tất.\u003C/p\u003E\n\u003Cp\u003E3. Kiểu dệt Mesh đặc biệt\u003C/p\u003E\n\u003Cp\u003EVới kiểu dệt Mesh làm tăng khả năng thoáng khí, khử mùi của tất. Ở phần mũi và gót chân của tất được làm dày hơn để giúp gia tăng độ bền.&nbsp;\u003C/p\u003E\n\u003Cp\u003E4. Khả năng thấm hút vượt trội\u003C/p\u003E\n\u003Cp\u003EBề mặt với vô số lỗ nhỏ thoáng khí kết hợp với thành phần cotton giúp tất có khả năng thấm hút mồ hôi vượt trội.\u003C/p\u003E\n",
+      "price": 149000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 14,
+      "name": "Combo 5 Đôi Tất Nam cổ trung Basics",
+      "description": "\u003Cp\u003ECombo 5 tất Cotton Cổ Trung Basics được làm từ chất liệu cotton, PE và Spandex. Đặc biệt vải PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton. Tất được thiết kế tinh tế, phần mũi chân, gót chân được làm dày hơn có tác dụng giúp gia tăng độ bền.\u003C/p\u003E\n\u003Cp\u003E1. Combo tất đáng mua nhất\u003C/p\u003E\n\u003Cp\u003ESản phẩm sử dụng chất liệu PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton mang đến cho người dùng những trải nghiệm cực kỳ chất lượng. \u003C/p\u003E\n\u003Cp\u003E2. Chất liệu cao cấp co giãn đàn hồi\u003C/p\u003E\n\u003Cp\u003ETất cổ ngắn được làm từ các chất liệu co giãn, đàn hồi tốt, phù hợp với hầu hết mọi đối tượng người dùng. Thành phần Polyester có trong tất xơ ngắn giúp tất đàn hồi, ít bị mài mòn và xù lông hơn. Kết hợp cùng sợi Cotton mang đến sự êm ái, thấm hút cho từng đôi tất.\u003C/p\u003E\n\u003Cp\u003E3. Kiểu dệt Mesh đặc biệt\u003C/p\u003E\n\u003Cp\u003EVới kiểu dệt Mesh làm tăng khả năng thoáng khí, khử mùi của tất. Ở phần mũi và gót chân của tất được làm dày hơn để giúp gia tăng độ bền. \u003C/p\u003E\n\u003Cp\u003E4. Khả năng thấm hút vượt trội\u003C/p\u003E\n\u003Cp\u003EBề mặt với vô số lỗ nhỏ thoáng khí kết hợp với thành phần cotton giúp tất có khả năng thấm hút mồ hôi vượt trội.\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 15,
+      "name": "Combo 5 Đôi Tất Nam cổ trung Basics",
+      "description": "\u003Cp\u003ECombo 5 tất Cotton Cổ Trung Basics được làm từ chất liệu cotton, PE và Spandex. Đặc biệt vải PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton. Tất được thiết kế tinh tế, phần mũi chân, gót chân được làm dày hơn có tác dụng giúp gia tăng độ bền.\u003C/p\u003E\n\u003Cp\u003E1. Combo tất đáng mua nhất\u003C/p\u003E\n\u003Cp\u003ESản phẩm sử dụng chất liệu PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton mang đến cho người dùng những trải nghiệm cực kỳ chất lượng.&nbsp;\u003C/p\u003E\n\u003Cp\u003E2. Chất liệu cao cấp co giãn đàn hồi\u003C/p\u003E\n\u003Cp\u003ETất cổ ngắn được làm từ các chất liệu co giãn, đàn hồi tốt, phù hợp với hầu hết mọi đối tượng người dùng. Thành phần Polyester có trong tất xơ ngắn giúp tất đàn hồi, ít bị mài mòn và xù lông hơn. Kết hợp cùng sợi Cotton mang đến sự êm ái, thấm hút cho từng đôi tất.\u003C/p\u003E\n\u003Cp\u003E3. Kiểu dệt Mesh đặc biệt\u003C/p\u003E\n\u003Cp\u003EVới kiểu dệt Mesh làm tăng khả năng thoáng khí, khử mùi của tất. Ở phần mũi và gót chân của tất được làm dày hơn để giúp gia tăng độ bền.&nbsp;\u003C/p\u003E\n\u003Cp\u003E4. Khả năng thấm hút vượt trội\u003C/p\u003E\n\u003Cp\u003EBề mặt với vô số lỗ nhỏ thoáng khí kết hợp với thành phần cotton giúp tất có khả năng thấm hút mồ hôi vượt trội.\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 16,
+      "name": "Túi Tote 84RISING Typo",
+      "description": "\u003Cp\u003ELà sự kết hợp của (+84) - Việt Nam, và RISING - Tỏa Sáng và Đi Lên. Tinh thần của 84RISING đó là Tự Do &amp; Cá Tính, Cảm Hứng &amp; Lạc Quan. Các sản phẩm của 84RISING thể hiện được cá tính riêng và cả tinh thần tích cực của thế hệ trẻ Việt Nam, các bạn không chỉ sống hết mình, dám nghĩ, dám làm cho bản thân, mà còn quan tâm tới đất nước, tới tương lai của Việt Nam.\u003C/p\u003E\n\u003Cp\u003EThiết kế đơn giản, không gian rộng rãi cho bạn thoải mái đựng đồ cá nhân\u003C/p\u003E\n\u003Cp\u003E- Đựng vừa laptop đến 17 inch\u003C/p\u003E\n\u003Cp\u003E- Kích thước 30 x 40 x 10 cm\u003C/p\u003E\n\u003Cp\u003E- Chất liệu thân thiện môi trường\u003C/p\u003E\n",
+      "price": 199000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Kem"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 17,
+      "name": "Combo 4 Tất Nam Cổ Ngắn",
+      "description": "\u003Cp\u003ELà một người thường mang giày, sneaker hay giày tây, chắc hẳn ai cũng biết rằng không thể giày một đằng, tất( vớ) một nẻo thì tổng thể vô cùng lạc quẻ, mất gu. Chính vì vậy, những đôi tất cổ ngắn chất liệu Cotton nhiều màu sắc sinh ra là dành cho bạn - những con người nghiện mang giày nói chung. Coolmate sẽ giúp bạn có nhiều lựa chọn hơn với sản phẩm Tất/vớ cổ ngắn Cotton thoáng khí, hãy cùng tìm hiểu ngay nhé!\u003C/p\u003E\n\u003Cp\u003E1. Combo tất đáng mua nhất\u003C/p\u003E\n\u003Cp\u003ESản phẩm sử dụng chất liệu PE được dệt từ sợi Polyester xơ ngắn có độ bền bỉ hơn cotton mang đến cho người dùng những trải nghiệm cực kỳ chất lượng.&nbsp;\u003C/p\u003E\n\u003Cp\u003E2. Chất liệu cao cấp co giãn đàn hồi\u003C/p\u003E\n\u003Cp\u003ETất cổ ngắn được làm từ các chất liệu co giãn, đàn hồi tốt, phù hợp với hầu hết mọi đối tượng người dùng. Thành phần Polyester có trong tất xơ ngắn giúp tất đàn hồi, ít bị mài mòn và xù lông hơn. Kết hợp cùng sợi Cotton mang đến sự êm ái, thấm hút cho từng đôi tất.\u003C/p\u003E\n\u003Cp\u003E3. Kiểu dệt Mesh đặc biệt\u003C/p\u003E\n\u003Cp\u003EVới kiểu dệt Mesh làm tăng khả năng thoáng khí, khử mùi của tất. Ở phần mũi và gót chân của tất được làm dày hơn để giúp gia tăng độ bền.&nbsp;\u003C/p\u003E\n\u003Cp\u003E4. Khả năng thấm hút vượt trội\u003C/p\u003E\n\u003Cp\u003EBề mặt với vô số lỗ nhỏ thoáng khí kết hợp với thành phần cotton giúp tất có khả năng thấm hút mồ hôi vượt trội.\u003C/p\u003E\n",
+      "price": 129000,
+      "salePrice": 119000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 18,
+      "name": "Túi UT Duffle size vừa 18L",
+      "description": "\u003Cp\u003E- Chất liệu Polyester tái chế có độ bền bỉ cao, thân thiện với môi trường.\u003C/p\u003E\n\u003Cp\u003E- Chống thấm nước, giúp hạn chế hư hỏng.\u003C/p\u003E\n\u003Cp\u003E- Lớp vải lót bên trong túi được làm từ chất liệu mềm mịn, được xử lý kháng khuẩn nghiêm ngặt, chống nấm mốc.\u003C/p\u003E\n\u003Cp\u003E- Kích thước của túi: Dài - 43cm; Rộng - 21cm; Cao - 26cm\u003C/p\u003E\n",
+      "price": 399000,
+      "salePrice": 359000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 19,
+      "name": "Túi UT Duffle size lớn 38L",
+      "description": "\u003Cp\u003E- Chất liệu Polyester tái chế có độ bền bỉ cao, thân thiện với môi trường.\u003C/p\u003E\n\u003Cp\u003E- Chống thấm nước, giúp hạn chế hư hỏng.\u003C/p\u003E\n\u003Cp\u003E- Lớp vải lót bên trong túi được làm từ chất liệu mềm mịn, được xử lý kháng khuẩn nghiêm ngặt, chống nấm mốc.\u003C/p\u003E\n\u003Cp\u003E- Kích thước của túi: Dài - 49cm; Rộng - 25cm; Cao - 31cm\u003C/p\u003E\n",
+      "price": 499000,
+      "salePrice": 449000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 20,
+      "name": "Túi trống Tập Gym",
+      "description": "\u003Cp\u003E- Dung tích: 24L\u003C/p\u003E\n\u003Cp\u003E- Sức chứa thoải mái, mang quần áo, giày dép. Đủ sức chứa đồ cho 4-5 ngày du lịch\u003C/p\u003E\n",
+      "price": 399000,
+      "salePrice": 319000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 21,
+      "name": "Tất Nam Thể Thao Cổ Dài",
+      "description": "\u003Cp\u003E- Tất vớ nam thể thao cổ dài chống trượt giúp giữ ấm, mang đến sự thoải mái khi đi, vào mùa đông còn giúp giữ ấm cho đôi chân, là một phần không thể thiếu trong cuộc sống hàng ngày của các chàng trai.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: 58% Cotton, 36% Polyester, 3% Elastane, 2% Silicon, 1% Elastodiene\u003C/p\u003E\n\u003Cp\u003E- Tất vớ nam được dệt bằng chất liệu Mesh mang đến độ thoáng khí, khô thoáng hơn khi đi lên chân.\u003C/p\u003E\n\u003Cp\u003E- Tại các mắt cá chân, gót chân, ngón chân, có các lớp đệm giúp giảm sốc, êm chân, tránh bị chấn thương.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế phần viền sọc chống trượt ở mu bàn chân và dưới lòng bàn chân.\u003C/p\u003E\n\u003Cp\u003E- Phần gót chân, đệm bàn chân được may dày hơn giúp êm ái và bảo vệ gót chân tốt nhất.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế đặc biệt để tăng cường hỗ trợ cổ chân tốt nhất, bảo vệ cổ chân trong quá trình hoạt động.\u003C/p\u003E\n\u003Cp\u003E- Độ đàn hồi và ôm sát chân rất tốt.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế đa chức năng phù hợp với nhiều môn thể thao khác nhau.\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 94000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 22,
+      "name": "Tất Nam Thể Thao Cổ Ngắn",
+      "description": "\u003Cp\u003E- Tất vớ nam thể thao cổ ngắn chống trượt giúp giữ ấm, mang đến sự thoải mái khi đi, vào mùa đông còn giúp giữ ấm cho đôi chân, là một phần không thể thiếu trong cuộc sống hàng ngày của các chàng trai.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: 58% Cotton, 36% Polyester, 3% Elastane, 2% Silicon, 1% Elastodiene\u003C/p\u003E\n\u003Cp\u003E- Tất vớ nam được dệt bằng chất liệu Mesh mang đến độ thoáng khí, khô thoáng hơn khi đi lên chân.\u003C/p\u003E\n\u003Cp\u003E- Tại các mắt cá chân, gót chân, ngón chân, có các lớp đệm giúp giảm sốc, êm chân, tránh bị chấn thương.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế phần viền sọc chống trượt ở mu bàn chân và dưới lòng bàn chân.\u003C/p\u003E\n\u003Cp\u003E- Phần gót chân, đệm bàn chân được may dày hơn giúp êm ái và bảo vệ gót chân tốt nhất.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế đặc biệt để tăng cường hỗ trợ cổ chân tốt nhất, bảo vệ cổ chân trong quá trình hoạt động.\u003C/p\u003E\n\u003Cp\u003E- Độ đàn hồi và ôm sát chân rất tốt.\u003C/p\u003E\n\u003Cp\u003E- Thiết kế đa chức năng phù hợp với nhiều môn thể thao khác nhau.\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 59000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 23,
+      "name": "Mũ len thêu logo Coolmate",
+      "description": "\u003Cp\u003EMột chiếc mũ len phù hợp với bất kỳ dịp nào. Với chiếc mũ len thêu logo Coolmate này, outfit Thu - Đông của bạn sẽ trở nên ấm áp hơn, \"cool\" hơn bao giờ hết. Một chiếc mũ len unisex, thích hợp cho cả nam và nữ chắc chắn sẽ là một trong những phụ kiện bạn không thể bỏ qua!\u003C/p\u003E\n",
+      "price": 169000,
+      "salePrice": 69000,
+      "averageRating": 5,
+      "categories": [
+        "Mũ/Nón"
+      ],
+      "colors": [
+        "Xám",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 24,
+      "name": "Combo 4 Tất Nam Cổ lười",
+      "description": "Là một người thường mang giày, sneaker hay giày tây, chắc hẳn ai cũng biết rằng không thể giày một đằng, tất một nẻo thì tổng thể vô cùng lạc quẻ, mất gu. Chính vì vậy, Coolmate mang đến cho bạn những đôi tất cổ ngắn chất liệu Cotton chống trượt nhiều màu sắc sinh ra là dành cho bạn - những con người nghiện mang giày nói chung.",
+      "price": 149000,
+      "salePrice": 134000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 25,
+      "name": "Combo 2 Tất Nam Thể Thao Active",
+      "description": "Sản phẩm tất mới nhất của Coolmate với đôi tất thể thao cổ dài sẽ giúp cho bạn có được vận động tốt nhất cũng như bảo vệ được phần chân bạn nhiều hơn. Ngoài ra tất nam cũng có thể ứng dụng cho nhiều trường hợp khác.",
+      "price": 98000,
+      "salePrice": 84000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 26,
+      "name": "Gaiter Mặt Nạ Đa Năng Chạy Bộ Sinh Nhật 5 Tuổi",
+      "description": "\u003Cp\u003E- Mặt nạ được làm từ 90% polyester và 10% spandex mang đến độ mềm của vải, sự mềm mịn, co giãn và thấm hút vượt trội, giúp mọi hoạt động ngoài trời thoải mái hơn\u003C/p\u003E\n\u003Cp\u003E- Gaiter Mặt Nạ Đa Năng Chạy Bộ đa năng phù hợp với bất cứ ai muốn bảo vệ phần mặt, đầu, cổ trong quá trình vận động và di chuyển.\u003C/p\u003E\n\u003Cp\u003E- Không chỉ thế, với chất liệu mát, thoáng khí, bạn có thể sử dụng mẫu mặt nạ này thay thế khẩu trang hoặc theo cách riêng của mình.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Mặt nạ Gaiter còn được gắn logo phản quang, hỗ trợ di chuyển trong bóng tối dễ dàng và an toàn hơn.\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 84000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [
+        "Xanh navy"
+      ],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 27,
+      "name": "Đai Đeo Bụng Chạy Bộ Fast & Free",
+      "description": "Chất liệu vải knit Mesh lớp trong và lớp ngoài giúp đai thấm hút và thoát hơi tốt hơn qua các lỗ trên bề mặt vải, giúp phần bụng thoáng khí khi vận động ",
+      "price": 399000,
+      "salePrice": 359000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 28,
+      "name": "Găng tay đa năng chống tia UV",
+      "description": "Găng tay chống UV. UPF 50+, thấm hút tốt, co giãn 4 chiều, thoáng mát",
+      "price": 99000,
+      "salePrice": 89000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 29,
+      "name": "Cốc làm từ bã cà phê",
+      "description": "Nhựa sinh học, làm từ bã cafe và các loại nhựa PVC, ABS, POM, PE, PP. Độ cứng và khả năng chịu nhiệt cao, chịu được va đập",
+      "price": 129000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 30,
+      "name": "Túi tote Canvas Care Share II",
+      "description": "Thiết kế đơn giản, tiện lợi, chất liệu vải thân thiện với môi trường giúp bạn mang vật dụng các nhân hàng ngày",
+      "price": 199000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Kem"
+      ],
+      "sizes": [
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 31,
+      "name": "Túi tote 84RISING Donald duck",
+      "description": "Được ra mắt nhân kỉ niệm 90 năm ngày sinh của nhân vật Donald, một nhân vật trở thành biểu tượng của Disney và luôn song hành như một người bạn thân thiết với chuột Mickey",
+      "price": 199000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Túi"
+      ],
+      "colors": [
+        "Xanh",
+        "Kem"
+      ],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 32,
+      "name": "Tất cổ cao 84RISING Donald 90th",
+      "description": "Là sự kết hợp của (+84) - Việt Nam, và RISING - Tỏa Sáng và Đi Lên. Tinh thần của 84RISING đó là Tự Do & Cá Tính, Cảm Hứng & Lạc Quan. Các sản phẩm của 84RISING thể hiện được cá tính riêng và cả tinh thần tích cực của thế hệ trẻ Việt Nam, các bạn không chỉ sống hết mình, dám nghĩ, dám làm cho bản thân, mà còn quan tâm tới đất nước, tới tương lai của Việt Nam.",
+      "price": 48000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 33,
+      "name": "Tất cổ trung cầu lông",
+      "description": "Dệt dày có đệm đàn hồi tăng độ êm chân và đàn hồi trong khi vận động tốc độ cao đặc trưng của bộ môn",
+      "price": 60000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Tất/Vớ"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 34,
+      "name": "Combo 2 Cặp Gaiter Chạy Bộ Bọc Chân",
+      "description": "Trong thế giới của chạy bộ địa hình đầy thách thức, Gaiter trở thành người bạn đồng hành đáng tin cậy. Chúng giúp bảo vệ chân và quần áo của bạn khỏi những tác nhân bên ngoài như bụi bẩn, sỏi đá, cát, đất,... Vì thế, đừng bỏ lỡ cơ hội trải nghiệm chạy bộ và bảo vệ chân với Combo 2 Cặp Gaiter chạy bộ địa hình bọc chắn đất từ Coolmate!",
+      "price": 318000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện"
+      ],
+      "colors": [],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 35,
+      "name": "Mũ Lưỡi Trai Cotton in Logo",
+      "description": "Form nón cứng 6 múi khỏe khoắn kết hợp với chất liệu Cotton giúp nón linh hoạt, dễ dàng chăm sóc",
+      "price": 179000,
+      "salePrice": 89000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Mũ/Nón"
+      ],
+      "colors": [],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 36,
+      "name": "Mũ Len 84RISING Beanie",
+      "description": "Một chiếc mũ len thời thượng sẽ giúp bộ đồ thu đông của bạn trở nên “cool ngầu” hơn rất nhiều. Mũ Len Nam 84RISING Beanie phù hợp với cả nam và nữ chắc chắn là phụ kiện nam không thể thiếu.",
+      "price": 184000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Mũ/Nón"
+      ],
+      "colors": [
+        "Kem"
+      ],
+      "sizes": [],
+      "feedbacks": []
+    },
+    {
+      "id": 45,
+      "name": "Áo Thun Seventy Seven",
+      "description": "\u003Cp\u003E- Áo thun cổ tròn tay ngắn co giãn 4 chiều, in cao cấp, thời trang và thoải mái.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Áo thun cổ tròn tay ngắn.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Chất liệu: 92% Cotton, 8% Spandex; Cotton 4 chiều.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Có 3 màu áo trung tính.\u003C/p\u003E\n",
+      "price": 169000,
+      "salePrice": 157000,
+      "averageRating": 4.5,
+      "categories": [
+        "Áo thun",
+        "Áo nam"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": [
+        {
+          "id": 11,
+          "rating": 4,
+          "color": "Xanh",
+          "size": "S",
+          "comment": "Sản phẩm rất hợp lí với túi tiền",
+          "createdAt": "2025-04-20T18:40:46.087142",
+          "userName": "User Test"
+        },
+        {
+          "id": 12,
+          "rating": 5,
+          "color": "Xanh rêu",
+          "size": "S",
+          "comment": "Rất đẹp",
+          "createdAt": "2025-04-20T18:57:32.340449",
+          "userName": "User Test"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Áo phao nhẹ Ultrawarm",
+      "description": "\u003Cp\u003E- Chất liệu vải: 100% Polyamide&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Form dáng: Regular&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Cấu trúc vải nylon có khả năng chống gió&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Bên trong vải được nhồi bông tăng khả năng giữ ấm&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Túi 2 bên chắc chắn thoải mái, đựng các vật dụng quan trọng\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 690000,
+      "salePrice": 587000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo khoác"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 48,
+      "name": "Áo Polo Nam Pique",
+      "description": "\u003Cp\u003E- Chất liệu: 95% Cotton + 5% Spandex&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Co giãn 4 chiều tạo cảm giác thoải mái khi mặc&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tay áo và cổ áo được dệt riêng với sợi Spandex đảm bảo độ đàn hồi và chống bai, nhão qua các lần giặt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 299000,
+      "salePrice": 79000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 49,
+      "name": "Áo sơ mi Flannel 100% Cotton",
+      "description": "\u003Cp\u003E- Chất liệu: 100% Cotton&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Form dáng: Regular&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dệt: Flannel&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Vải flannel 100% cotton được chải nhẹ để tạo độ mềm mại và ấm áp, mang lại cảm giác dễ chịu khi mặc Flannel cotton thường được sử dụng trong mùa thu đông vì có khả năng giữ nhiệt hiệu quả&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 590000,
+      "salePrice": 531000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Đỏ",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 50,
+      "name": "Áo Sơ Mi Dài Tay Essentials Cotton",
+      "description": "\u003Cp\u003E- Chất liệu 100% Cotton mềm mại&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Thoáng mát, thấm hút mồ hôi tốt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Vải có độ bền cao, không bị xù lông sau nhiều lần giặt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Phù hợp với: đi làm, đi chơi&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dáng: Regular loose dễ dàng phối đồ, tạo layer\u003C/p\u003E\n",
+      "price": 399000,
+      "salePrice": 379000,
+      "averageRating": 3.7,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": [
+        {
+          "id": 13,
+          "rating": 2,
+          "color": "Trắng",
+          "size": "S",
+          "comment": "Good!!!! Ngoài mong đợi, nhưng giá hơi cao.!!!",
+          "createdAt": "2025-04-20T18:58:56.262114",
+          "userName": "User Test"
+        },
+        {
+          "id": 14,
+          "rating": 4,
+          "color": "Trắng",
+          "size": "S",
+          "comment": "quá đẹp, trên cả tuyệt vời!",
+          "createdAt": "2025-04-20T19:07:22.885493",
+          "userName": "User Test"
+        },
+        {
+          "id": 23,
+          "rating": 5,
+          "color": "Trắng",
+          "size": "S",
+          "comment": "Hàng đẹp bạn ey",
+          "createdAt": "2025-06-08T10:36:26.686853",
+          "userName": "User Test"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Quần Shorts Nam Daily Short",
+      "description": "\u003Cp\u003E- Chất liệu: 47% Polyester Sorona + 53% Polyester&nbsp;\u003C/p\u003E\n\u003Cp\u003E- SORONA là dòng sợi có nguồn gốc từ thực vật với nhiều ưu điểm vượt trội&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Nhuộm bằng công nghệ CLEANDYE tại Việt Nam&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Phù hợp với: mặc nhà, đi picnic, đi cà phê&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Độ dài quần: 8 inch&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất: từ Dệt, Nhuộm, May tại Việt Nam\u003C/p\u003E\n",
+      "price": 229000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 52,
+      "name": "Quần Shorts Daily Casual",
+      "description": "\u003Cp\u003E- Thành phần: 62% Cotton và 38% Polyester&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Chất liệu vải co giãn, thoáng mát thuận tiện với việc đi lại&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Thiết kế đơn giản, năng động.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Vải chống nhăn, thấm hút tốt và hạn chế xù lông&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất: từ Dệt, Nhuộm, May tại Việt Nam\u003C/p\u003E\n",
+      "price": 399000,
+      "salePrice": 379000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 53,
+      "name": "Quần Shorts Nam Mặc Nhà",
+      "description": "\u003Cp\u003E- Chất liệu: 74% Cotton + 22% Polyester + 4% Spandex&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Chất liệu mềm mại, thoáng mát Kiểu dáng rộng, giống quần short&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Mặc ở nhà hoặc khi đi ngủ để dễ chịu hơn\u003C/p\u003E\n\u003Cp\u003E- Lưng thun co giãn, không gây vết hằn&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 99000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Xanh rêu",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 54,
+      "name": "Quần Jeans Nam Basics dáng Straight",
+      "description": "\u003Cp\u003E- Chất liệu: Denim&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Thành phần: 100% Cotton&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Công nghệ Laser Marking tạo các vệt hiệu ứng chuẩn xác trên sản phẩm&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Bề mặt quần không thô ráp&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Co giãn tốt giúp quần ôm vừa vặn, thoải mái&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Dáng Regular Straight suông rộng, thoải mái, không thùng thình&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 499000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "39-42",
+        "43-46"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 55,
+      "name": "Quần Jeans Nam Basics dáng Slim fit",
+      "description": "\u003Cp\u003E- Chất liệu: Denim Thành phần: 98% Cotton + 2% Spandex&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Công nghệ Laser Marking tạo các vệt hiệu ứng chuẩn xác trên sản phẩm&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Vải Denim được wash trước khi may nên không rút và hạn chế ra màu sau khi giặt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Bề mặt quần không thô ráp&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Co giãn tốt giúp quần ôm vừa vặn, thoải mái&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Dáng Slim Fit ôm tôn dáng, giúp bạn \"hack\" đôi chân dài và gọn đẹp\u003C/p\u003E\n",
+      "price": 499000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "39-42",
+        "43-46"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 56,
+      "name": "Quần Dài Nam Kaki Excool",
+      "description": "\u003Cp\u003E- Chất liệu: 57% Polyester + 43% sợi Sorona&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Công nghệ Excool: Co giãn nhẹ, Thoáng khí, Chống tia UV SPF50+&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Phù hợp với: đi làm, đi chơi&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dáng hơi ôm một chút&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 499000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 57,
+      "name": "Quần dài nam ECC Ripstop Pants",
+      "description": "\u003Cp\u003E- Chất liệu: Polyamide Taslan pha Spandex.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Độ bền và khả năng co giãn tốt.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Trượt nước và chống bám bụi.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Nhẹ và thoáng khí, thoải mái khi mặc.&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất: từ Dệt, Nhuộm, May tại Việt Nam\u003C/p\u003E\n",
+      "price": 349000,
+      "salePrice": 315000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 58,
+      "name": "Quần Jogger Thể Thao ExDry",
+      "description": "\u003Cp\u003E- Thành phần: 92% Polyester, 8% Spandex, dệt Woven-Plain mềm mịn, co giãn tốt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Công nghệ ExDry thấm hút tốt, nhanh khô, thoáng khí&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Thiết kế 5 túi tiện lợi, có 1 túi ẩn khoá kéo an toàn&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Dáng regular rộng, thoải mái&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 329000,
+      "salePrice": 269000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 59,
+      "name": "Quần Jogger thể thao Fleece Track Pants Premium",
+      "description": "\u003Cp\u003E- Chất liệu: 100% Polyester Polyester có khả năng chống nhăn tốt, giữ được form quần lâu dài&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dệt: Knit - Double Knit&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dệt Double knit tạo lớp vải bền chắc và co giãn tốt&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Form dáng: Regular&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Tự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 599000,
+      "salePrice": 539000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 60,
+      "name": "Quần Bơi Summer Cool 5 inch",
+      "description": "\u003Cp\u003E- Thành phần: 53% Rec Polyester + 47% PBT&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dệt Warp Knit Fast Dry: Không bị đọng nước và nhanh khô&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Khả năng kháng Clo giúp sợi vải bền màu, giữ form dáng lâu dài&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Dây rút điều chỉnh ở phần eo giúp bạn dễ dàng độ vừa vặn, thoải mái khi bơi&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Bề mặt vải mềm mại, dễ chịu với da&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dáng boxer trẻ trung, thoải mái\u003C/p\u003E\n",
+      "price": 189000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần bơi",
+        "Boxer Shorts"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Đỏ"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 61,
+      "name": "Quần Bơi Summer Cool 9 inch",
+      "description": "\u003Cp\u003E- Thành phần: 53% Rec Polyester + 47% sợi PBT&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dệt Warp Knit Fast Dry: Không bị đọng nước và nhanh khô&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Khả năng kháng Clo giúp sợi vải bền màu, giữ form dáng lâu dài&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Dây rút điều chỉnh ở phần eo giúp bạn dễ dàng độ vừa vặn, thoải mái khi bơi&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Bề mặt vải mềm mại, dễ chịu với da Kiểu dáng Jammer ống dài mạnh mẽ, thoải mái\u003C/p\u003E\n",
+      "price": 199000,
+      "salePrice": 189000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần bơi",
+        "Boxer Shorts"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 62,
+      "name": "Combo 3 Quần Lót Nam Brief Bamboo",
+      "description": "\u003Cp\u003E- Chất liệu 95% sợi Bamboo (vải tre), 5% Spandex mềm mại, không gây ngứa, khó chịu khi mặc&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Công nghệ may Flat-out Stream đảm bảo sự co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Phù hợp với: những chàng trai gầy cơ bắp&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Kiểu dáng: quần lót Brief&nbsp;\u003C/p\u003E\n\u003Cp\u003E- Sản xuất tại xưởng 10 năm kinh nghiệm tại TP Hồ Chí Minh\u003C/p\u003E\n",
+      "price": 229000,
+      "salePrice": 209000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Brief (Tam giác)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 63,
+      "name": " Combo 3 Quần Lót Nam Brief Cotton Modal",
+      "description": "Chất liệu: 50% Modal - 42% Cotton - 8% Spandex\nCông nghệ may Flat-out Stream đảm bảo co dãn và êm ái nhẹ nhàng cho phần da vùng nhạy cảm\nPhù hợp với: những chàng trai gầy cơ bắp\nKiểu dáng: quần lót Brief\nSản xuất tại xưởng 10 năm kinh nghiệm tại TP Hồ Chí Minh",
+      "price": 231000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Brief (Tam giác)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 64,
+      "name": "Quần Lót Nam Trunk CoolPouch II",
+      "description": "Thành phần: 88% Polyester + 12% Spandex\nVải dệt Knit - Mesh\nCông nghệ ExDry thấm hút, nhanh khô, thoáng khí\nThiết kế CoolPouch như chiếc túi đựng \"ball\", giúp cố định và nâng đỡ\nKhe moi CoolFly chiều ngang giúp việc thao tác nhanh chóng, không cần kéo quần xuống\nCông nghệ may Flat Out Seams giúp giảm ma sát với da, cảm giác mặc thoải mái\nVải có tính kháng khuẩn, hạn chế vi khuẩn gây mùi",
+      "price": 129000,
+      "salePrice": 116002,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Trunk (Boxer)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 65,
+      "name": "Quần Lót Nam Trunk Ex-Comfort Modal - Outlet",
+      "description": "Chất liệu: 91% High Quality Modal + 9% Spandex\nCông nghệ Ex-Comfort mang đến sự mềm mại, thoáng mát và thấm hút mồ hôi\nĐường may Flat Out Seams không gây hằn ngứa khó chịu\nKháng khuẩn tự nhiên nhờ vải từ tự nhiên\nVải được xử lí tránh bị xù lông sau nhiều lần giặt\nTự hào sản xuất tại Việt Nam",
+      "price": 101000,
+      "salePrice": 50000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Trunk (Boxer)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 66,
+      "name": "Combo 2 Boxer Brief Thể thao",
+      "description": "Chất liệu Microfiber siêu mịn, mát và co giãn\nThành phần: 86% Polyester + 14% Spandex\nCông nghệ Ex-Dry nhanh khô thoáng mát\nCông nghệ may Flat Out Seams không gây hằn ngứa khó chịu, êm ái\nPhù hợp mặc hoạt động thể thao\nKhông nhăn, dễ bảo quản và chăm sóc\nTự hào sản xuất tại Việt Nam",
+      "price": 258999,
+      "salePrice": 227998,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Boxer Brief (Boxer dài)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 67,
+      "name": "Áo Sweater Essential Fleece",
+      "description": "Thành phần vải: 100% Polyester\nVải 100% polyester có khả năng chống nhăn tự nhiên\nKiểu dệt: French Terry\nFleece có khả năng khô nhanh và không gây dị ứng\nForm dáng: Regular\nNgười mẫu: 180 cm - 75 kg, mặc áo size 2XL\nTự hào sản xuất tại Việt Nam",
+      "price": 249000,
+      "salePrice": 199000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 68,
+      "name": "Áo Sweater Fleece",
+      "description": "Thành phần vải: 60% Cotton 40% Polyester\nForm dáng: Regular\nVải fleece thường được làm từ sợi polyester, có khả năng giữ ấm tốt\nThành phần cotton giúp vải có khả năng thoáng khí và hút ẩm tốt\nPolyester góp phần làm tăng độ bền của vải, giúp sản phẩm ít bị rách hoặc mài mòn\nNgười mẫu: 1m81 - 76kg, mặc áo size L\nTự hào sản xuất tại Việt Nam",
+      "price": 349000,
+      "salePrice": 262000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 69,
+      "name": "Áo Dài Tay Gym Powerfit",
+      "description": "Chất liệu: 86% Polyester tái chế + 14% Spandex\nVải co giãn 4 chiều giúp bạn thoải mái thực hiện các bài tập\nVải xử lí hoàn thiện tính năng Thấm hút (Wicking) và Nhanh khô (Ex-Dry)\nForm áo: Baselayer fit, ôm hơn Slim Fit\nTự hào sản xuất tại Việt Nam",
+      "price": 249000,
+      "salePrice": 124000,
+      "averageRating": 4.5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Đỏ",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": [
+        {
+          "id": 15,
+          "rating": 4,
+          "color": "Xám",
+          "size": "M",
+          "comment": "Cũng tạm",
+          "createdAt": "2025-04-20T20:19:37.964601",
+          "userName": "Viết Hùng Test 1"
+        },
+        {
+          "id": 16,
+          "rating": 5,
+          "color": "Đỏ",
+          "size": "M",
+          "comment": "Khá đẹp, đẹp hơn cái kia",
+          "createdAt": "2025-04-20T20:19:49.765621",
+          "userName": "Viết Hùng Test 1"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Áo giữ nhiệt Essential Brush Poly cổ thấp",
+      "description": "Thành phần vải: 90% Polyester 10% Spandex\nForm dáng: Slimfit ôm nhẹ vào cơ thể\nChất liệu mềm mại và khả năng giữ ấm tốt\nPhù hợp: Mặc trong hoặc mặc ở nhà\nTự hào sản xuất tại Việt Nam.",
+      "price": 149000,
+      "salePrice": 133999,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 71,
+      "name": "Áo dài tay Cotton Compact",
+      "description": "\u003Cp\u003EChất liệu: 95% Cotton Compact + 5% Spandex \u003C/p\u003E\n\u003Cp\u003EBề mặt vải Cotton mềm mịn, cảm giác mát lần đầu chạm tay \u003C/p\u003E\n\u003Cp\u003EThấm hút mồ hôi tốt Độ xù lông thấp \u003C/p\u003E\n\u003Cp\u003EVải có độ bền cao, co giãn 4 chiều và hạn chế bai nhão \u003C/p\u003E\n\u003Cp\u003ETự hào sản xuất tại Việt Nam\u003C/p\u003E\n",
+      "price": 269000,
+      "salePrice": 214999,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy",
+        "Xanh rêu",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 72,
+      "name": "Card Holder nam Coolmate da bò Nappa",
+      "description": "Card Holder nam Coolmate da bò Nappa rất đẹp và thanh lịch",
+      "price": 199000,
+      "salePrice": 189001,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ví/Thắt lưng"
+      ],
+      "colors": [],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 96,
+      "name": "Áo thun nam Excool logo Coolmate",
+      "description": "- Thành phần vải: 56% Polyester PET + 44% Polyester PTT Sorona\n- Co giãn 4 chiều, mang đến sự thoáng mát, thoải mái và dễ chịu cho người sử dụng.\n- Người mẫu: 182cm - 77kg, mặc size 2XL\n- Tự hào sản xuất tại Việt Nam",
+      "price": 199000,
+      "salePrice": 99000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 97,
+      "name": "Áo Thun Nam Cotton 220GSM",
+      "description": "Chất liệu: 100% Cotton\nVải 220gsm dày dặn\nKiểu dáng: Regular fit\nPhù hợp: Mặc hàng ngày\nNgười mẫu: 186cm - 77kg, mặc áo 2XL\nTính năng: Bề mặt vải mềm mịn và ít xù lông",
+      "price": 179000,
+      "salePrice": 159000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 98,
+      "name": "Áo thun nam Cotton Compact",
+      "description": "Áo thun nam cotton Compact Premium sử dụng chất liệu cotton mềm mại, mang đến cảm giác dễ chịu cho cả ngày dài hoạt động. Nếu bạn là người yêu sự đơn giản và ưu tiên sự tiện lợi, linh hoạt thì đây chính là sản phẩm dành cho bạn.\nChất liệu cotton compact cao cấp.\nThiết kế cơ bản thanh lịch cho nam giới.\nChất lượng đường may tỉ mỉ.",
+      "price": 259000,
+      "salePrice": 229000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 99,
+      "name": "Áo thun Cotton Trạm Phóng Tương Lai",
+      "description": "Áo thun Cotton Compact Trạm Phóng Tương Lai\n100% lợi nhuận từ việc bán áo sẽ được sử dụng để sơn sửa lại trường học, xây mới nhà vệ sinh để đáp ứng 260 em học sinh đang học tập và sinh hoạt tại trường Tiểu học Lê Văn Tám, thôn 4, xã Ea M'Đoal, huyện M'Drawsk, tỉnh Đắk Lắk",
+      "price": 259000,
+      "salePrice": 207000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 100,
+      "name": " Áo thun Cotton Compact In Lụa VỤN ART Logo Giữa V1",
+      "description": "Áo thun Cotton Compact Care & Share | Vụn Art\nNhững sản phẩm được thiết kế và tạo ra từ đôi bàn tay khéo léo của những người khuyết tật, có hoàn cảnh khó khăn trong dự án Vụn Art kết hợp cùng Coolmate Care & Share.",
+      "price": 299000,
+      "salePrice": 239000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 101,
+      "name": " Áo thun dài tay 100% Cotton Relax fit",
+      "description": "Dòng sản phẩm Thu Đông của Coolmate mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu cơ bản nhất của nam giới mọi ngày thu đông, phù hợp với nhiều hoạt động khác nhau như đi tập, đi chơi hay mặc ở nhà.",
+      "price": 299000,
+      "salePrice": 219000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 102,
+      "name": "Áo Thun Nam Peace",
+      "description": "Đây là những chiếc áo thun in hình trong dự án Clean Vietnam của Coolmate làm từ chất liệu Cotton kết hợp cùng chất liệu Polyester được tái chế từ các vỏ chai nhựa.",
+      "price": 299000,
+      "salePrice": 98999,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 103,
+      "name": "Áo Thun Nam Cotton Trơn",
+      "description": "Nằm trong dự án Clean Vietnam, Coolmate cho ra mắt chiếc áo thun trơn Clean Viet Nam, mang thiên hướng bảo vệ môi trường và hạn chế sử dụng chai nhựa.\n\"Clean Vietnam\" là dự án cộng đồng tâm huyết của Coolmate và đối tác của mình - Nam Anh Fabric và nghệ sĩ Vietmax với mong muốn nâng cao nhận thức về việc hạn chế sử dụng chai nhựa, tăng cường việc tái chế và tái sử dụng đồ nhựa, góp phần vì một Việt Nam thật xanh nói riêng.\nChính vì vậy những chiếc áo thun nằm trong dự án chắc chắn cũng đặc biệt:\nLà cấu trúc dệt kim bằng kĩ thuật đan xen giữa sợi tự nhiên và nhân tạo giúp vải không bị bai nhão\nVải chăm sóc dễ dàng hơn\nThấm hút nhanh và nhanh khô hơn cotton, TC, CVC thông thường",
+      "price": 296000,
+      "salePrice": 99000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 104,
+      "name": "Áo Thun Nam Love More",
+      "description": "Đây là những chiếc áo thun trong dự án Clean Vietnam, cho ra mắt chiếc áo thun in Love More Clean Vietnam làm từ chất liệu Cotton kết hợp cùng chất liệu Polyester được tái chế từ các vỏ chai nhựa. \n\"Clean Vietnam\" là dự án cộng đồng tâm huyết của Coolmate và đối tác của mình - Nam Anh Fabric và nghệ sĩ Vietmax với mong muốn nâng cao nhận thức về việc hạn chế sử dụng chai nhựa, tăng cường việc tái chế và tái sử dụng đồ nhựa, góp phần vì một Việt Nam thật xanh nói riêng.\n\nChính vì vậy những chiếc áo thun nằm trong dự án chắc chắn cũng đặc biệt:\n\nLà cấu trúc dệt kim bằng kĩ thuật đan xen giữa sợi tự nhiên và nhân tạo giúp vải không bị bai nhão\nVải chăm sóc dễ dàng hơn\nThấm hút nhanh và nhanh khô hơn cotton, TC, CVC thông thường",
+      "price": 299000,
+      "salePrice": 99000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 105,
+      "name": "Áo Thun Nam The Future Is Yours",
+      "description": "Đây là những chiếc áo thun in hình trong dự án Clean Vietnam của Coolmate làm từ chất liệu Cotton kết hợp cùng chất liệu Polyester được tái chế từ các vỏ chai nhựa. \n \"Clean Vietnam\" là dự án cộng đồng tâm huyết của Coolmate và đối tác của mình - Nam Anh Fabric và nghệ sĩ Vietmax với mong muốn nâng cao nhận thức về việc hạn chế sử dụng chai nhựa, tăng cường việc tái chế và tái sử dụng đồ nhựa, góp phần vì một Việt Nam thật xanh nói riêng. Dự án đặc biệt như vậy còn những chiếc áo nam có đặc biệt như vậy không? Cùng Coolmate khám phá nhé!",
+      "price": 329000,
+      "salePrice": 99000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 106,
+      "name": "Áo jersey 84RISING Mickey",
+      "description": "- Thành phần vải: 100% Recycled Polyester\n- Vải dệt Knit Interlock\n- Công nghệ ExDry thấm hút tốt, nhanh khô, thoáng khí\n- Vải co giãn thoải mái\n- Form dáng: Oversize Jersey\n- Tự hào sản xuất tại Việt Nam Xem nhà máy \u003E\n- Người mẫu: 1m8 - 68kg mặc áo size L",
+      "price": 399000,
+      "salePrice": 319000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 107,
+      "name": "Áo Thun Thỏ 7 Màu chị Xô",
+      "description": "Áo Thun Thỏ 7 Màu chị Xô",
+      "price": 399000,
+      "salePrice": 139000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 108,
+      "name": "Áo dài tay thể thao 1699",
+      "description": "Áo dài tay thể thao 1699",
+      "price": 269000,
+      "salePrice": 219000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh rêu",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 109,
+      "name": "Áo thun Nam Thể thao Phối bo cổ",
+      "description": "Sản phẩm sử dụng công nghệ Ex-Dry mang lại khả năng nhanh khô cùng với sự co giãn tối ưu sẽ đem lại một trải nghiệm phù hợp với các hoạt động thể thao, đồng thời tôn body giúp người mặc tự tin hơn về vóc dáng.",
+      "price": 249000,
+      "salePrice": 219000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng",
+        "Đỏ"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 110,
+      "name": " Áo Thun Nam Chạy Bộ Graphic Dot",
+      "description": "Công nghệ: Ex-Dry\nChất liệu: 100% Polyester\nKiểu dáng: Regular fit\nPhù hợp: Khi chạy bộ hoặc tập các môn thể thao khác\nTính năng: Giảm ma sát, Co giãn tự nhiên",
+      "price": 199000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đỏ",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 111,
+      "name": "Áo thun thể thao Jacquard Seamless",
+      "description": "Áo thun thể thao thoáng mát, thấm hút mồ hôi nhanh chóng để giữ cho bạn khô ráo và sảng khoái trong quá trình luyện tập.",
+      "price": 349000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 112,
+      "name": "Áo thun Racquet Sport Graphic Blue Pattern",
+      "description": "Sản phẩm có phần thiết kế kỹ thuật phù hợp với cơ thể, chi tiết cổ áo phù hợp với các môn thể thao.",
+      "price": 249000,
+      "salePrice": 219000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 113,
+      "name": "Áo thun Racquet Sport Graphic Red Line",
+      "description": "Sản phẩm có thiết kế vừa vặn với cơ thể, chi tiết cổ áo phù hợp với nhiều môn thể thao.",
+      "price": 249000,
+      "salePrice": 199000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đỏ"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 114,
+      "name": "Áo thun Racquet Sport Graphic Geometric",
+      "description": "Sản phẩm có thiết kế vừa vặn với cơ thể, có phần cổ áo phù hợp với nhiều môn thể thao.",
+      "price": 249000,
+      "salePrice": 219000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 115,
+      "name": "Combo 2 Áo thun chạy bộ Advanced Vent Tech",
+      "description": "Advanced Vent Tech mang lại cảm giác trải nghiệm mỏng nhẹ, hạn chế ma sát tuyệt đối - một sản phẩm quan trọng cho người yêu thích chạy bộ.",
+      "price": 430000,
+      "salePrice": 349000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 116,
+      "name": "Áo thun thể thao Mesh",
+      "description": "Mesh - áo thun sử dụng công nghệ Ex Dry hỗ trợ cho các hoạt đông thể thao và tôn body giúp người dùng tự tin hơn về vóc dáng \nForm Slim fit \nDáng slim fit tóm gọn vừa phải, không quá bó sát vào phần cơ thể \nKiểu dệt Mesh \nThấm hút nhanh chóng, dễ bay hơi mồ hôi giúp người mặc có cảm giác luôn khô thoáng và không bị bám dinh khi hoạt động. \nĐường may tinh tế \nCác đường may sử dụng chỉ tơ mềm, chắc chắn, không gây ngứa và hỗ trợ vận động tối đa \nExDry Excellent Dry Technology \nVải thoáng mát dễ dàng vận động \nSản phẩm sử dụng công nghe EXDRY với các loại vài có tính năng co giãn, nhanh khô",
+      "price": 169000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 117,
+      "name": "Áo thun Training Comfort",
+      "description": "Training Comfort - một dòng sản phẩm sinh ra với định hướng là must have cho bất kỳ ai tập gym - từ mới tập cho đến tập lâu năm, phù hợp với mọi động tác từ dễ đến khó",
+      "price": 279000,
+      "salePrice": 249000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xám",
+        "Đỏ",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 118,
+      "name": "Quần dài nam thể thao co giãn đa năng",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 289000,
+      "salePrice": 229000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 119,
+      "name": "Combo 3 Quần lót Nam Trunk Ex-Comfort Modern Bamboo",
+      "description": "Trải nghiệm sự thoải mái vượt trội cùng quần lót làm từ sợi Bamboo cao cấp. Với chất liệu sợi tự nhiên mềm mại, co giãn và thoáng khí, sản phẩm đem lại cảm giác mới mẻ, dễ chịu và khả năng thấm hút mồ hôi vượt trội. Đây chính là lựa chọn hoàn hảo để nam giới luôn khô thoáng và tự tin.",
+      "price": 357000,
+      "salePrice": 289000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Trunk (Boxer)",
+        "Boxer Shorts",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 120,
+      "name": "Quần Jogger nam thể thao Studio Woven",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 399000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 121,
+      "name": "Quần Jogger nam thể thao Hybrid Woven",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 379000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 122,
+      "name": "Áo thun Relaxed Fit 84RISING MouseNap",
+      "description": "Áo thun Relaxed Fit 84RISING MouseNap",
+      "price": 299000,
+      "salePrice": 239000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 123,
+      "name": "Áo khoác WindBreaker Nylon Taslan",
+      "description": "Chất liệu: 100% Polyamide\nKiểu dáng: Regular fit\nPhù hợp: Mặc ngoài trời\nTính năng: Có khả năng cản gió tốt",
+      "price": 590000,
+      "salePrice": 449000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo khoác",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 124,
+      "name": "Áo khoác 2 lớp Casual",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 649000,
+      "salePrice": 489000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo khoác",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 125,
+      "name": "Áo khoác thể thao Windbreaker Ripstop",
+      "description": "Chất liệu: 100% Polyamide\nKiểu dáng: Regular fit\nPhù hợp: Mặc ngoài trời\nTính năng: Chống gió và chống thấm",
+      "price": 549000,
+      "salePrice": 439000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo khoác",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 126,
+      "name": "Quần dài chạy bộ Running Pant",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 390000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Phụ kiện",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 127,
+      "name": "Quần Jogger thể thao Fleece Track Pants Premium",
+      "description": "Dòng sản phẩm thu đông mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng mọi nhu cầu nam giới trong mọi ngày thu đông, linh hoạt cho nhiều hoạt động khác nhau như đi tập, ở nhà, chơi thể thao,...",
+      "price": 599000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 128,
+      "name": "Quần Long Leg Co giãn",
+      "description": "Công nghệ: Công nghệ nhanh khô (Ex-Dry) giúp sản phẩm nhanh khô và thoáng khí hơn\nChất liệu: 86% Recycled Polyester + 14% Spandex\nKiểu dáng: Long leg\nPhù hợp: Làm quần bảo hộ và quần lót trong\nTính năng: Thấm hút ( Wicking)\nThiêt kế khe moi Coolfly 2 lớp vải dễ dàng truy cập những nơi cần thiết",
+      "price": 199000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần thể thao",
+        "Đồ lót",
+        "Long Leg",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 129,
+      "name": "Áo sơ mi dài tay Oxford Premium",
+      "description": "Dòng sản phẩm sơ mi mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng nhu cầu của nam giới, dễ dàng phối đồ từ phong cách công sở đến chàng trai năng động",
+      "price": 599000,
+      "salePrice": 509000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 130,
+      "name": " Quần dài kaki ECC Pants",
+      "description": "Chất liệu: 58% cotton 29% Nylon 13% Spandex\nKiểu dáng: Regular fit\nPhù hợp: Mặc hàng ngày\nTính năng: Thiết kế có 5 túi đựng tiện lợi",
+      "price": 599000,
+      "salePrice": 529000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 131,
+      "name": "Áo sơ mi dài tay cổ tàu Premium Poplin",
+      "description": "Áo sơ mi tay dài cổ tàu phong cách lịch lãm, truyền thống nhưng không kém phần hiện đại.\nĐường may tỉ mỉ chắc chắn trong từng chi tiết sản phẩm, kết hợp được với nhiều loại trang phục giúp người mặc chủ động hơn trong các thời điểm.",
+      "price": 449000,
+      "salePrice": 399000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 132,
+      "name": "Áo Khoác Nam gió Thể Thao phối màu",
+      "description": "Áo Khoác Nam gió Thể Thao phối màu",
+      "price": 499000,
+      "salePrice": 449000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo khoác",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 133,
+      "name": "Quần Jogger Nam Daily Wear",
+      "description": "Quần Jogger nam Daily Wear mang đến sự kết hợp hoàn hảo giữa phong cách và sự tiện lợi. Với chất liệu thoáng mát, thoải mái, bạn dễ dàng vận động cả ngày dài mà không lo cảm giác khó chịu.",
+      "price": 299000,
+      "salePrice": 249000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 134,
+      "name": "Quần Jogger Nam Excool",
+      "description": "Quần dài nam Jogger Excool đến từ thương hiệu Coolmate sở hữu chất liệu 100% Polyester có khả năng co giãn 4 chiều mang đến sự thoải mái, dễ dàng vận động. Công nghệ Excool được ứng dụng trong thiết kế giúp sản phẩm thấm hút tốt, khô nhanh và thoáng khí dù hoạt động nhiều giờ. Đặc biệt dáng quần Slim fit phù hợp với nhiều dáng người khác nhau. ",
+      "price": 379000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 135,
+      "name": " Quần Jogger Nam UT đa năng",
+      "description": "Chất liệu: 90% Polyamide + 10% Spandex\nKiểu dáng: Regular fi\nNgười mẫu: 182cm - 77kg, mặc quần 2XL\nPhù hợp: Hoạt động ngoài trời\nTính năng: Áp dụng công nghệ trượt nước\nCó độ bền và chịu ma sát",
+      "price": 499000,
+      "salePrice": 439000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Quần Joggers",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 136,
+      "name": "Áo Tanktop Nam Thể Thao Active phối màu",
+      "description": "Áo ba lỗ thể thao Active thoáng mát tối đa giúp bạn thoải mái vận động: \nChất liệu 100% Recycle Polyester với tính năng Thấm hút (Wicking) và Công nghệ Nhanh khô (Ex-Dry).\nCo giãn 2 chiều phù hợp mặc chơi thể thao hay ở nhà đều thoải mái. \nThoáng mát với chất vải thấm hút tốt. \nKiểu dáng Regular fit dáng suông.",
+      "price": 169000,
+      "salePrice": 49000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 137,
+      "name": "Quần Shorts Nam thể thao 5\" 7799",
+      "description": "- Chất liệu 100% Polyester\n- Kiểu dệt Double Weaving\n- Công nghệ ExDry thấm hút tốt, nhanh khô, thoáng khí\n- Logo in phản quang trong bóng tối\n- Tự hào sản xuất tại Việt Nam\n- Người mẫu: 181cm - 76kg, mặc quần XL",
+      "price": 159000,
+      "salePrice": 69000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 138,
+      "name": "Áo Thun Nam Thể Thao Active logo",
+      "description": "Co giãn, đàn hồi, mang đến cảm giác thoải mái khi sử dụng, áo thun thể thao Active logo của Coolmate được sản xuất hoàn toàn tại Việt Nam chính là “must-have” item trong tủ đồ của các chàng trai ưa vận động.\n\nĐược sản xuất từ nguyên liệu tái chế, chiếc áo không chỉ nhanh khô mà còn có khả năng thấm hút mồ hôi vượt trội, giúp cơ thể luôn khô thoáng kể cả khi hoạt động với cường độ mạnh.",
+      "price": 199000,
+      "salePrice": 79000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 139,
+      "name": "Áo Singlet chạy bộ Fast & Free",
+      "description": "Áo Singlet chạy bộ Fast & Free ba lỗ Coolmate chất liệu Polyester mang tới trải nghiệm thoáng khí, siêu nhẹ và hạn chế tối đa ma sát khi vận động. Một sản phẩm thời trang yêu thích dành cho các chàng trai trong mùa hè này. \n\nÁo ba lỗ tank top nam có trọng lượng nhẹ, hạn chế ma sát trong quá trình vận động, thoáng mát và nhanh khô, sản phẩm thích hợp cho những Runner hoặc sử dụng hàng ngày.  \n\nChương trình miễn phí vận chuyển cho đơn hàng từ 200K\n\nĐổi trả hàng hoàn toàn miễn phí trong vòng 60 ngày\n\nDịch vụ tư vấn, chăm sóc khách hàng chuyên nghiệp, tận tâm\n\nTrở thành thành viên CoolClub với nhiều ưu đãi hấp dẫn!",
+      "price": 189000,
+      "salePrice": 98000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 140,
+      "name": "Combo 3 Áo Sát Nách Nam Thể Thao Promax",
+      "description": "Combo 3 Áo Tanktop Nam Dri-Breathe là giải pháp hoàn hảo cho những chàng trai năng động, yêu thích vận động. Chất liệu vải 100% Polyester Quick-Dry độc quyền từ Coolmate mang đến trải nghiệm thông thoáng, mát mẻ bất chấp mọi hoạt động.\n",
+      "price": 569000,
+      "salePrice": 409000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 141,
+      "name": " Quần Shorts Nam Tập Gym 6\"",
+      "description": "Dòng sản phẩm GYM Essentials sử dụng vải Cotton có tính thấm hút tự nhiên , phù hợp trong mỗi bữa tập.",
+      "price": 299000,
+      "salePrice": 229000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 142,
+      "name": "Áo Sweatshirt Thể Thao Active",
+      "description": "Áo Sweatshirt Thể Thao Active Coolmate sử dụng chất liệu Cotton và Polyester có khả năng giữ ấm cơ thể, thấm hút mồ hôi tốt, hạn chế xù lông sau quá trình giặt và chống nhăn hiệu quả. Đây thực sự là chiếc áo thể thao mùa đông cho mọi chàng trai nên có trong tủ đồ. \n\nÁo Sweatshirt Thể Thao Active thoáng khí, chất liệu cotton mềm mại, êm ái giúp giữ nhiệt cơ thể tốt. Bề mặt vải thoáng khí, hạn chế xù lông và bền màu sau nhiều lần giặt. Thiết kế kiểu dáng linh loạt, thời trang giúp các chàng trai phối đồ dễ dàng, sử dụng linh hoạt khi đi làm, đi chơi hoặc ở nhà. \n\nChương trình miễn phí vận chuyển cho đơn hàng từ 200K\n\nĐổi trả hàng hoàn toàn miễn phí trong vòng 60 ngày\n\nDịch vụ tư vấn, chăm sóc khách hàng chuyên nghiệp, tận tâm\n\nTrở thành thành viên CoolClub với nhiều ưu đãi hấp dẫn!",
+      "price": 399000,
+      "salePrice": 179000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 143,
+      "name": " Áo Nỉ chui đầu Essentials",
+      "description": "Áo nỉ chui đầu Essentials là thiết kế dễ phối đồ được nhiều bạn nam yêu thích lựa chọn trong mùa thu đông. Sản phẩm của Coolmate sử dụng chất liệu vải nỉ chân cua định lượng 360gsm cao cấp dày dặn, giữ nhiệt tốt, không nhăn, bai nhão hay xù lông trong quá trình mặc.",
+      "price": 399000,
+      "salePrice": 199000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 144,
+      "name": "Áo Nỉ chui đầu Lifewear",
+      "description": "Chắc hẳn chiếc áo nỉ nam là món trang phục phải có trong tủ đồ của hầu hết cánh mày râu. Nhất là khi thời tiết chuyển mùa và những ngày se lạnh sắp đến, em ấy lại càng quan trọng hơn. Vì thế, sản phẩm Áo nỉ chui đầu Lifewear - Coolmate hiện đang được triển khai để mang đến cho chàng một mẫu áo nam đẹp, thời trang, phong cách.\n\nĐặc điểm nổi bật của Áo nỉ chui đầu Lifewear - Coolmate\nLà mẫu áo nỉ nam được “tâm đắc”, Áo nỉ chui đầu Lifewear - Coolmate tự hào khi sở hữu vô vàn đặc điểm nổi bật như:\n\nĐược làm từ chất liệu vải nỉ chân cua với thành phần cotton mềm mại, độ dày vừa vặn giúp mặc đông ấm hạ mát.\n\nChất liệu tốt giúp bền màu, hạn chế xù lông ngay cả khi sử dụng sau thời gian dài.\n\nDáng áo Regular, thoải mái, năng động, tạo cảm giác dễ chịu khi mặc.\n\nĐường may chắc chắn cùng với thiết kế chỉ nổi tạo nên điểm nhấn độc đáo cho chiếc áo nam. \n\nSản phẩm áo nam đẹp tự hào sản xuất tại Việt Nam, đảm bảo sự chất lượng đạt mức tối đa.",
+      "price": 399000,
+      "salePrice": 349000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 145,
+      "name": "Áo Nỉ chui đầu Lifewear",
+      "description": "Chắc hẳn chiếc áo nỉ nam là món trang phục phải có trong tủ đồ của hầu hết cánh mày râu. Nhất là khi thời tiết chuyển mùa và những ngày se lạnh sắp đến, em ấy lại càng quan trọng hơn. Vì thế, sản phẩm Áo nỉ chui đầu Lifewear - Coolmate hiện đang được triển khai để mang đến cho chàng một mẫu áo nam đẹp, thời trang, phong cách.\n\nĐặc điểm nổi bật của Áo nỉ chui đầu Lifewear - Coolmate\nLà mẫu áo nỉ nam được “tâm đắc”, Áo nỉ chui đầu Lifewear - Coolmate tự hào khi sở hữu vô vàn đặc điểm nổi bật như:\n\nĐược làm từ chất liệu vải nỉ chân cua với thành phần cotton mềm mại, độ dày vừa vặn giúp mặc đông ấm hạ mát.\n\nChất liệu tốt giúp bền màu, hạn chế xù lông ngay cả khi sử dụng sau thời gian dài.\n\nDáng áo Regular, thoải mái, năng động, tạo cảm giác dễ chịu khi mặc.\n\nĐường may chắc chắn cùng với thiết kế chỉ nổi tạo nên điểm nhấn độc đáo cho chiếc áo nam. \n\nSản phẩm áo nam đẹp tự hào sản xuất tại Việt Nam, đảm bảo sự chất lượng đạt mức tối đa.",
+      "price": 399000,
+      "salePrice": 349000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 146,
+      "name": "Áo Polo nam Excool",
+      "description": "Chiếc áo polo nam của Coolmate là một lựa chọn tuyệt vời cho chàng vào những ngày oi bức . Với thiết kế đơn giản nhưng sở hữu nhiều ưu điểm nổi trội, đây là item cần có trong tủ quần áo của chàng. ",
+      "price": 399000,
+      "salePrice": 359000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 147,
+      "name": "Combo 5 Quần Lót Nam Trunk Bamboo",
+      "description": "Chất liệu: 95% sợi Bamboo (vải tre) 5% Spandex\nKiểu dáng: Boxer dáng\nNgười mẫu: 178 cm - 70 kg, mặc quần 2XL\nPhù hợp: Mặc trong và hàng ngày\nTính năng: Công nghệ may Flat Out Seams co giãn và êm ái",
+      "price": 499000,
+      "salePrice": 439000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Trunk (Boxer)",
+        "Boxer Shorts"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 148,
+      "name": "Combo 3 Áo Polo Nam Thể Thao ProMax-S1",
+      "description": "Coolmate đã cho ra mắt rất nhiều sản phẩm áo thể thao với nhiều chất liệu: maxcool, quickdry,... và với mục tiêu tập trung vào chất liệu để đem đến cho khách hàng những chiếc áo tốt bắt nguồn từ chất liệu, chiếc áo Polo thể thao nam Promax-S1 đã được ra mắt vào đúng thời điểm mùa hè này để đảm bảo khách hàng nhà Coolmate luôn được thoải mái, dễ chịu mà vẫn lịch sự trong bất kỳ trường hợp nào. Cùng tìm hiểu vì sao chiếc áo Polo thể thao này lại là sản phẩm mà Coolmate tâm đắc để gửi đến khách hàng. ",
+      "price": 717000,
+      "salePrice": 619000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 149,
+      "name": "Pack 3 Áo Polo nam Pique Cotton",
+      "description": "Pack 3 Áo Polo nam Pique Cotton",
+      "price": 897000,
+      "salePrice": 759000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 150,
+      "name": "Áo Singlet Chạy Bộ Graphic Photic",
+      "description": "- Chất liệu 100% Polyester\n- Kiểu dệt Mini Square tạo ra các lỗ nhỏ trên vải giúp thoáng khí hơn\n- Công nghệ ExDry thấm hút tốt, nhanh khô, thoáng khí\n- Logo in phản quang trong bóng tối\n- Sản phẩm được đánh giá phù hợp với hoạt động chạy bộ bởi các Runner\n- Người mẫu: 183cm - 77kg, mặc áo 2XL\n- Tự hào sản xuất tại Việt Nam",
+      "price": 189000,
+      "salePrice": 89000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đỏ"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 151,
+      "name": "Combo 3 Quần Lót Nam Brief Boxer Modal V2",
+      "description": "- Chất liệu: 91% Modal + 9% Spandex\n- Vải Modal cải tiến mềm mịn hơn, thoáng mát hơn\n- Bền bỉ hơn, hạn chế bị xù lông sau nhiều lần giặt hay ma sát khi vận động\n- Kháng khuẩn tự nhiên nhờ vải từ tự nhiên\n- Đường may Flat Out Seams không gây hằn ngứa khó chịu\n- Đai lưng dệt không gây vết hằn\n- Tự hào sản xuất tại Việt Nam\n- Người mẫu: 182cm - 77kg, mặc quần 2XL",
+      "price": 330000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Đồ lót",
+        "Trunk (Boxer)",
+        "Boxer Brief (Boxer dài)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 152,
+      "name": "Áo thun dài tay Relaxed Fit 84RISING Everyday Venom",
+      "description": "Áo thun dài tay Relaxed Fit 84RISING Everyday Venom",
+      "price": 399000,
+      "salePrice": 319000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 153,
+      "name": "Combo 2 Quần Shorts Chạy Bộ Ultra Fast & Free II",
+      "description": "- Chất liệu: 100% Polyester\n- Kiểu dệt Double Weaving\n- Công nghệ ExDry thấm hút, nhanh khô, thoáng mát\n- Chi tiết phản quang hỗ trợ trong điều kiện thiếu sáng\n- Túi sau khoá kéo an toàn và túi chun bên hông đựng vừa điện thoại, ví tiền\n- Phù hợp với: chơi thể thao, chạy bộ. Được đánh giá bởi các Runner chuyên nghiệp\n- Độ dài quần: 5 inch\n- Tự hào sản xuất tại Việt Nam* Xem nhà máy \u003E\n- Người mẫu: 181cm - 76kg, mặc quần XL",
+      "price": 498000,
+      "salePrice": 399000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 154,
+      "name": "Quần Thể Thao Nam 7\" Ultra Shorts",
+      "description": "Mẫu quần thể thao được xử lý hoàn thiện vải Quick-Dry nhanh khô, mang lại sự thoải mái khi tập luyện.",
+      "price": 189000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 155,
+      "name": "Áo dài tay Cotton Compact V2",
+      "description": "Áo dài tay Cotton Compact V2 của nhà Coolmate sẽ là lựa chọn tuyệt vời cho chàng thích phong cách basic hoặc tối giản. Với thiết kế đơn giản nhưng không kém phần trẻ trung, thời thượng, đây sẽ là mẫu áo nam mà chàng cần có trong tủ quần áo. ",
+      "price": 269000,
+      "salePrice": 199000,
+      "averageRating": 5,
+      "categories": [
+        "Áo thun",
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 156,
+      "name": "Quần dài nam Woven Excool siêu nhẹ",
+      "description": "Quần dài nam Woven Excool - Một sản phẩm được yêu thích tại Coolmate với ưu điểm siêu nhẹ, thoáng khí, giúp bạn tự tin thể hiện nhiều phong cách. Phù hợp cho nam giới trẻ trung, năng động, yêu thích sự tiện lợi và linh hoạt trong mọi hoạt động.\n\nChất liệu vải siêu nhẹ\nĐược dệt từ sợi vải Polyester Sorona cao cấp, Quần dài nam Woven Excool có trọng lượng siêu nhẹ, giúp bạn tự do khi vận động.\n\nChất liệu này còn có khả năng chống UV, bảo vệ làn da tránh khỏi ánh nắng gắt, hạn chế các tác động tiêu cực lên da.\n\nCông nghệ thoáng khí tối ưu\nVới công nghệ Excool thấm hút vượt trội, Quần Woven Excool giữ cơ thể luôn khô ráo và thoải mái. Bề mặt vải được xử lý theo công nghệ tiên tiến, giúp thoát mồ hôi nhanh chóng, dễ chịu ngay cả khi thời tiết nóng ẩm hay khi luyện tập cao độ.\n\nQuần Woven Excool đa năng, tiện dụng\nĐây là chiếc quần nam phù hợp với nhiều môi trường từ công sở, đi chơi, đến thể thao hoặc tham gia các hoạt động ngoài trời. Mẫu quần dài đơn giản nên rất dễ Mix-Match với các loại áo phông, Polo,... giúp bạn tiết kiệm thời gian lựa chọn trang phục. \n\nThiết kế thông minh của túi khóa kéo bên hông rộng và sâu, đảm bảo đồ đạc của bạn luôn an toàn. Quần có lưng thun ôm vừa vặn, dây rút dễ dàng điều chỉnh theo vóc dáng cơ thể bạn.",
+      "price": 379000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 157,
+      "name": "Quần dài nam ECC Ripstop Pants",
+      "description": "Thiết kế đơn giản, năng động, quần ECC Ripstop giúp bạn luôn thoải mái khi mặc ở nhà hay mặc trong các hoạt động thường ngày.",
+      "price": 349000,
+      "salePrice": 299000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 158,
+      "name": "Quần Dài Nam ECC Warp Pants dáng Tape",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 590000,
+      "salePrice": 529000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 159,
+      "name": "Quần Dài Nam ECC Warp Pants dáng Slim",
+      "description": "- Chất liệu 100% Polyester PTT Microfiber, dệt kim Warp Knit giúp vải co giãn dễ dàng vận động, giữ form tốt hơn Polyester thông thường\n- Sợi Microfiber mềm mịn, được xử lí hoàn thiện vải thấm hút, nhanh khô và thoáng khí\n- Vải có khả năng chống tia UVA/UVB \u003E95%\n- Dáng Slim Fit thon gọn\n- Người mẫu: 178cm - 75kg, mặc quần XL\n- Tự hào sản xuất tại Việt Nam",
+      "price": 590000,
+      "salePrice": 529000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 160,
+      "name": "Quần Shorts Nam Kaki Excool",
+      "description": "- Thành phần: 57% Polyester + 43% sợi Sorona chống tia UV, thấm hút nhanh khô và co giãn nhẹ\n- Lưng thun phía trong, co giãn vừa vòng bụng\n- Túi khoá kéo ẩn đựng vừa ví, điện thoại\n- Tự hào sản xuất tại Việt Nam\n- Người mẫu: 182cm - 77kg, mặc quần XL",
+      "price": 429000,
+      "salePrice": 369000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 161,
+      "name": "Áo Sơ Mi Dài Tay Premium Dobby",
+      "description": "- Chất liệu 100% Cotton mềm mại, chống nhăn, kiểu dệt Dobby thoáng khí\n- Vải có khả năng trượt nước, chống bám bụi\n- Vải ứng dụng công nghệ nano giúp loại bỏ hơn 70% vi khuẩn và khử mùi hiệu quả\n- Kiểu dáng: Slim Fit thanh lịch\n- Người mẫu: 186cm - 77kg, mặc áo 2XL\n- Tự hào sản xuất tại Việt Nam",
+      "price": 599000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 162,
+      "name": "Quần Shorts thể thao 7 inch đa năng",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 198000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 163,
+      "name": "Áo Sơ Mi Dài Tay Essentials Cotton",
+      "description": "- Chất liệu 100% Cotton mềm mại\n- Thoáng mát, thấm hút mồ hôi tốt\n- Vải có độ bền cao, không bị xù lông sau nhiều lần giặt\n- Phù hợp với: đi làm, đi chơi\n- Kiểu dáng: Regular loose dễ dàng phối đồ, tạo layer\n- Người mẫu: 181 cm - 81 kg, mặc áo size L",
+      "price": 399000,
+      "salePrice": 349000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 164,
+      "name": "Quần Jeans Nam siêu nhẹ",
+      "description": "- Chất liệu Denim 8.5 Oz mỏng nhẹ\n- Thành phần: 98% cotton + 2% Spandex\n- Vải Denim được wash trước khi may, không rút và hạn chế ra màu sau khi giặt\n- Dáng Straight rộng phóng thoáng, thoải mái, không thùng thình\n- Tự hào sản xuất tại Việt Nam\n- Lưu ý: Sản phẩm vẫn sẽ bạc màu sau một thời gian dài sử dụng theo tính chất tự nhiên",
+      "price": 499000,
+      "salePrice": 439000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 165,
+      "name": "Quần Dài Nam Tháo Ống UT Pants 2 in 1",
+      "description": "- Thành phần: 89% Polyamide + 11% Spandex\n- Kiểu dệt Woven - Taslan co giãn 4 chiều, thấm hút tốt, nhanh khô và thoáng khí\n- Vải được xử lí công nghệ Trượt nước (Water Repellent C6)\n- Thiết kế tháo ống thành quần shorts dễ dàng\n- Sản xuất tại Nhà máy TNY, Việt Nam.",
+      "price": 790000,
+      "salePrice": 690000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 166,
+      "name": "Quần Dài Nam Kaki Excool dáng Straight",
+      "description": "Quần Dài Nam Kaki Excool dáng straight ống rộng cực kì tiện lợi và thoải mái. Với nhiều đặc tính nổi trội từ sợi sorona tự nhiên, đây chắc chắn là một chiếc quần của nhà Coolmate mà chàng nên có trong tủ quần áo của mình đấy. \n\nChất liệu Sorona cao cấp\nĐược làm từ sợi sorona tự nhiên, an toàn cho người mặc và thân thiện với môi trường. Nhờ đó, chiếc quần nam này sở hữu nhiều ưu điểm nổi bật như thấm hút nhanh, có độ co giãn tốt, mềm mại, êm ái cùng khả năng chống tia UV cực đỉnh. \n\nKiểu dáng ống suông thanh lịch \nQuần Dài Nam Kaki Excool dáng Regular Straight mang đến sự thoải mái và năng động cho chàng. Với dáng ống suông mang đến sự thanh lịch và trưởng thành hơn. Nam giới văn phòng có thể thoải mái diện khi đi làm.\n\nThiết kế túi chi tiết tiện lợi\nQuần có thiết kế gồm nhiều túi quần 2 bên hông và phía sau tiện lợi. Với túi trước có dây kéo chắc chắn, đựng vừa điện thoại. Túi sau có nút cài an toàn, có thể an tâm đựng ví, tiền mà không lo rơi rớt. \n\nLưng thun vừa vặn kèm dây rút tiện lợi\nBên cạnh đó là phần lưng thun ôm vừa vặn cơ thể. Bên trong còn có dây rút tiện lợi để chàng có thể cân chỉnh độ rộng phù hợp. Nhờ đó, chàng không cần dùng thêm thắt lưng rườm rà. ",
+      "price": 490000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 167,
+      "name": "Áo Polo Nam Pique Cotton",
+      "description": "Chất liệu: 100% Cotton\nKiểu dáng: Regular fit\nPhù hợp: Đi làm, đi chơi hoặc mặc hàng ngày\nTính năng: Kiểu dệt Pique giúp áo thoáng mát\nXử lí hoàn thiện giúp ít xù lông",
+      "price": 299000,
+      "salePrice": 259000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy",
+        "Xanh rêu",
+        "Kem"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 168,
+      "name": "Quần Jeans Nam Copper Denim Straight",
+      "description": "Quần Jeans Nam Copper Denim dáng Straight của Coolmate sử dụng chất liệu Cotton lên đến 99% tạo cảm giác thoáng mát. Chiếc quần nam này chắc hẳn sẽ là người bạn đồng hành thân thiết của các bạn trong mọi tình huống.\n\nDáng Straight suông tôn dáng\nQuần jeans dáng Straight suông thoải mái suốt cả ngày, siêu tôn dáng, phù hợp với mọi vóc dáng nam giới kể cả với chàng dáng người đầy đặn.\n\nGam màu trung tính dễ lựa chọn\nQuần jeans có 3 màu sắc nam tính phù hợp khi phối với nhiều loại áo nam khác nhau, tạo nên những bộ trang phục thời thượng.\n\nChất liệu cao cấp được kiểm nghiệm kỹ\nVải denim có thành phần 99% sợi cotton và 1% spandex co giãn đàn hồi và thấm hút tốt, tạo sự thoải mái khi mặc cả ngày dài. Định lượng vải 12oz (340gr) nhẹ hơn rất nhiều so với quần jeans thường, mang đến trải nghiệm mặc nhẹ nhàng, không nặng nề, không bí bách.\n",
+      "price": 599000,
+      "salePrice": 539000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 169,
+      "name": "Quần dài nam Daily Pants",
+      "description": "Quần dài nam Daily Pants là một trong những sản phẩm nổi bật tại Coolmate. Quần được sản xuất từ sợi Sorona mang nhiều ưu điểm nổi trội mà không phải chiếc quần nào cũng sở hữu được. \n\nChất liệu tự nhiên sợi Sorona cao cấp\nQuần dài nam Daily Pants được sản xuất từ chất liệu tự nhiên sợi sorona và sợi nhân tạo là polyester để tạo nên một chiếc quần nam mang nhiều ưu điểm nổi bật. Những đặc tính nổi trội của sản phẩm phải kể đến như thấm hút nhanh, nhanh khô, có độ co giãn, đàn hồi tốt cùng khả năng chống tia UV cực đỉnh.",
+      "price": 299000,
+      "salePrice": 269000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần dài",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 170,
+      "name": "Quần Jeans Nam Basics dáng Slim fit",
+      "description": "Quần jean slim fit chắc hẳn là món đồ không thể thiếu trong bộ sưu tập của các chàng trai. Sản phẩm quần Jeans nam Basics dáng Slim fit của Coolmate dưới đây là một gợi ý về loại quần nam trẻ trung, năng động mà bạn đang tìm kiếm.\nQuần Jeans nam Basics dáng Slim fit đến từ nhà Coolmate sở hữu những đặc tính ưu việt của những loại quần bò nam:\n\nQuần jean slim fit ứng dụng công nghệ Laser Marking với những đường cắt sắc nét, mượt mà và chính xác trên từng chi tiết.\n\nQuần được thiết dáng Slim fit ôm vừa vặn với cơ thể, tạo hiệu ứng “hack” đôi chân dài để tôn dáng.\n\nVải co giãn và thấm hút tốt, cho phép bạn một ngày dài hoạt động thoải mái.",
+      "price": 499000,
+      "salePrice": 449000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 171,
+      "name": "Quần Jeans Nam Copper Denim Slim Fit",
+      "description": "Quần Jeans Nam Copper Denim Slim Fit của Coolmate sử dụng chất liệu Cotton lên đến 99% tạo cảm giác thoáng mát. Chiếc quần nam này chắc hẳn sẽ là người bạn đồng hành thân thiết của các bạn trong mọi tình huống.\n\nDáng Slim Fit tôn dáng\nQuần jeans có dáng Slim Fit ôm tôn dáng, giúp tôn lên đôi chân của nam giới. Màu sắc denim cổ điển dễ mặc lại dễ dàng phối đồ, phù hợp với nhiều nhu cầu khác nhau: từ dạo phố, đi chơi đến đi làm, dự tiệc.\n\nCông nghệ Wash hạn chế phai màu\nVải denim được wash trước khi may nên không rút và còn hạn chế ra màu nên sẽ không gây lo ngại trong vấn đề giặt, sấy. Quần luôn giữ được màu vài đẹp trong thời gian dài sử dụng.\n\nChất liệu cao cấp được kiểm nghiệm kỹ\nVải denim có thành phần 99% sợi cotton và 1% spandex co giãn đàn hồi và thấm hút tốt, tạo sự thoải mái khi mặc cả ngày dài. Định lượng vải 12oz (340gr) nhẹ hơn rất nhiều so với quần jeans thường, mang đến trải nghiệm mặc nhẹ nhàng, không nặng nề, không bí bách.\n\nVải bền bỉ mặc lâu dài\nTest thử độ bền với khoan điện và dao sắc đều cho thấy độ bền bỉ cao của vài. Quần bền bỉ, không sờn rách khi sử dụng, giúp bạn tiết kiệm thời gian và tiền bạc sắm thêm đồ mới.\n\n",
+      "price": 599000,
+      "salePrice": 539000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần jeans",
+        "Quần dài",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 172,
+      "name": "Quần Shorts Nam New French Terry V2",
+      "description": "Quần Shorts Nam được Coolmate nghiên cứu và phát triển rất nhiều dòng sản phẩm từ kiểu dáng quần thể thao đến quần casual cùng các chất liệu đa dạng. Và nếu bạn đã sở hữu những chiếc quần short khác của Coolmate thì không thể bỏ lỡ chiếc quần version \"ra đời sau\" nhưng với công năng vượt trội đến từ chiếc quần shorts nam New French Terry, Coolmate tin đây sẽ là chiếc quần nam đem đến cho bạn trải nghiệm tuyệt vời bởi sự thoáng khi và thấm hút mà chiếc quần này đem đến.\n\nChiếc quần short nam New French Terry V2 là một sản phẩm được ra mắt với kiểu dệt French Terry mang lại sự mát mẻ ngay từ lần đầu tiếp xúc với da:\n\nNhẹ hơn : giúp nam giới luôn mang cảm giác thoải mái, tự tin khi mặc chiếc quần lên cơ thể\nThoáng khí: không để lại cảm giác mùi khó chịu sau một ngày dài vận động\nThấm hút: thâm hút tối đa mồ hôi\nCo giãn: độ co giãn 4 chiều luôn luôn thoải mái khi vận động",
+      "price": 259000,
+      "salePrice": 199000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xám",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 173,
+      "name": "Quần Shorts Nam Tập Gym 6\"",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 299000,
+      "salePrice": 229000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 174,
+      "name": "Quần Short Nam Thể Thao Promax-S1",
+      "description": "Quần Shorts Nam Thể Thao Promax-S1 Coolmate sử dụng chất liệu Poly đã được xử lý hoàn thiện tính năng Quick-Dry và Wicking để luôn mang tới sự thoáng mát, dễ chịu trong bất kỳ bài tập thể thao nào. Đây thực sự là chiếc quần short nam dành cho mọi chàng trai yêu thích sự vận động.\n\nQuần Shorts Nam Thể Thao Promax-S1 thoáng khí, thấm hút tốt, nhanh khô. Thiết kế bề mặt vải nhiều lỗ nhỏ, gia tăng sự thoát ẩm khi vận động, kiểu dáng linh loạt, thời trang giúp các chàng trai phối đồ dễ dàng khi tập luyện hoặc mặc ở nhà. \n\nChương trình miễn phí vận chuyển cho đơn hàng từ 200K\n\nĐổi trả hàng hoàn toàn miễn phí trong vòng 60 ngày\n\nDịch vụ tư vấn, chăm sóc khách hàng chuyên nghiệp, tận tâm",
+      "price": 189000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 175,
+      "name": " Quần Shorts Chạy Bộ 2 lớp Fast & Free III",
+      "description": "- Vải chính: 45% Polyester + 55% Recycle Polyester\n- Lớp trong: 86% Recycle Polyester + 14% Spandex\n- Công nghệ ExDry thấm hút tốt, nhanh khô, thoáng khí\n- Kiểu dệt Woven Plain giúp vải mềm mịn, trọng lượng nhẹ\n- Lớp trong co giãn 4 chiều thoải mái vận động\n- Sản phẩm được đánh giá phù hợp với hoạt động chạy bộ bởi các Runner\n- Tự hào sản xuất tại Việt Nam",
+      "price": 399000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Quần thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 176,
+      "name": "Quần Shorts Summer Cool 7 inch",
+      "description": "Mẫu quần Short phù hợp với đi biển, đi chơi, thiết kế hiện đại, chết liệu đặc biệt giúp chống tia UV và trượt nước.",
+      "price": 249000,
+      "salePrice": 149000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Quần nam",
+        "Quần shorts",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 177,
+      "name": "Áo Polo Thể Thao Active Premium",
+      "description": "Vừa lịch sự vừa khoẻ khoắn, áo polo nam luôn là item không thể thiếu trong tủ đồ của nam giới. Nếu bạn đang tìm kiếm một chiếc áo thoải mái, mát mẻ với thiết kế tối giản, có thể kết hợp được với nhiều loại trang phục khác nhau, đừng bỏ qua áo polo thể thao nam Active Premium của Coolmate.\n\n1. Chất liệu vải cao cấp\nÁo Polo Thể Thao Active Premium được làm từ chất liệu 100% Recycled Polyester vừa thân thiện với môi trường, vừa mềm mại và co giãn thoải mái.\n\nĐặc biệt, áo còn được tích hợp công nghệ ExDry giúp vải có khả năng “thở tốt hơn\", cho phép không khí lưu thông qua vải để mang đến cảm giác mát mẻ cho người mặc và giúp áo nhanh khô hơn bao giờ hết. Ngoài ra, tính năng Wicking cũng giúp áo có khả năng thấm hút mồ hôi vượt trội.\n\n2. Kiểu dệt Knit - Pique bền co giãn tốt\nBên cạnh đó, Áo Polo Thể Thao Active Premium còn được ứng dụng kiểu dệt Knit - Pique. Thông thường dệt kim (knit) là kiểu dệt các vòng sợi theo nhiều hướng khác nhau, có thể thành hàng ngang, xiên hoặc theo chiều thẳng đứng để tạo thành hình zigzag đối xứng. Cấu trúc này giúp bề mặt vải mềm, xốp, cải thiện độ co giãn.\n\nVới kiểu diệt Knit-Pique, bề mặt vải sẽ có các ô trống nhỏ giúp cải thiện độ thoáng khí, giữ cho cơ thể luôn mát mẻ, khô thoáng dù là trong khi tập luyện hay khi làm việc trong nhà.\n\n3. Thiết kế vừa vặn tiện lợi đa năng\nVới form Slim Fit, Áo Polo Thể Thao Active Premium rất vừa vặn và tôn dáng. Phần vai áo được thiết kế rất hiện đại để tạo hiệu ứng nổi khối khi mặc. Tà áo cũng được xẻ để giúp nam giới vận động thoái mái hơn, đồng thời hạn chế tình trạng vạt áo bị cuộn lên khi hoạt động. ",
+      "price": 329000,
+      "salePrice": 279000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 178,
+      "name": "Áo Polo Nam Pique Cotton USA",
+      "description": "Áo polo nam Pique Cotton USA thấm hút tốt xứng đáng trở thành một trong những sản phẩm bán chạy nhất tại Coolmate.\n\n1. Chất liệu Cotton USA cao cấp\nCotton USA hay còn gọi là Cotton Mỹ, được sản xuất từ sợi bông tự nhiên và công nhận chất lượng từ hiệp hội bông quốc tế Mỹ. Cotton USA chiếm lĩnh thị trường thời trang vì có cấu trúc sợi vải dai và dài vượt trội hơn nhiều so với các sợi vải khác. Từ đó, chúng sở hữu khả năng thấm hút, bền chắc, thoáng khí vượt trội.\n\nCùng với đó là 3% spandex có khả năng co giãn tốt, mang lại cảm giác thoải mái suốt cả ngày vận động.\n\n2. Thiết kế tinh tế nam tính\nKiểu dáng cổ bẻ điển hình của dòng áo polo, mang lại cảm giác sang trọng và lịch lãm. Cùng với đó là thiết kế xẻ tà phần gấu áo, tạo cảm giác thoải mái hơn cả ngày.",
+      "price": 399000,
+      "salePrice": 149000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 179,
+      "name": "Áo Polo Nam Cafe",
+      "description": "Áo polo nam Cafe khử mùi, kháng khuẩn là mẫu áo polo đầu tiên được phát triển từ vải sợi công nghệ tái tạo từ bã cà phê và chai nhựa. Đây là một trong những sản phẩm hướng tới thời trang bền vững tại Coolmate. \n\nVải Cafe sở hữu các tính năng vượt trội sau:\n\nKiểm soát mùi: Phân tử cafe có tác dụng hấp thụ mùi một cách tự nhiên, khử mọi mùi hôi khó chịu, giúp bạn tự tin cả ngày dài\nNhanh khô: Công nghệ Hydroponic giúp mồ hôi, hơi ấm bốc hơi nhanh hơn khỏi bề mặt vải, giúp áo luôn khô thoáng, giúp bạn thêm thoải mái hơn.\nChống tia UV: Vải cafe có khả năng chống tia UV tự nhiên, giúp bảo vệ da khỏi tác động xấu từ ánh nắng mặt trời, giúp bạn thoải mái hoạt động ngoài trời không lo hại sức khoẻ.\nMát mẻ: Vải cafe sở hữu khả năng điều hoà cơ thể mát hơn 1-2 độ so với nhiệt độ ngoài trời, giúp bạn lúc nào cũng cảm giác mát mẻ, thoải mái, đặc biệt trong điều kiện nóng ẩm ngày hè.",
+      "price": 329000,
+      "salePrice": 279000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 180,
+      "name": " Áo Polo Nam Ice Cooling",
+      "description": "Áo Polo Ice Cooling là một dòng sản phẩm áo polo được Coolmate nghiên cứu kỹ và thiết kế đề cao tính thoải mái, dễ chịu và dễ phối đồ. Chất liệu và công nghệ làm mát được sử ứng dụng giúp áo hạn chế tích tụ nhiệt, làm khô nhanh chóng mang đến 1 trải nghiệm hoàn hảo mỗi khi diện đồ.\n\nĐặc điểm nổi bật của áo Polo Ice Cooling\nÁo nam Polo Ice Cooling là 1 trong những sản phẩm giúp các chàng trở nên lịch lãm và thanh lịch hơn. Ngoài ra chiếc áo Polo Ice Cooling còn sở hữu nhiều điểm nổi bật như:\n\nChất liệu 85% Polyamide và 15% Spandex mang đến độ co giãn, thoải mái khi mặc.\n\nChất vải được xử lý với tính năng Thấm hút (Wicking) và nhanh khô (Ex-Dry) phù hợp với các hoạt động thể thao hoặc vận động nhiều.\n\nThiết kế phần đường lai tay và lai áo cắt laser được ép seam hiện đại\n\nKiểu dệt Pique thoáng khí, mang đến cảm giác mát mẻ khi mặc\n\nVải có độ bền cao, hạn chế co rút và chống nhăn tốt\n\nChất liệu áo Polo Ice Cooling\nÁo áo phông nam có cổ Polo Ice Cooling Chất liệu 85% Polyamide và 15% Spandex. Trong đó, Polyamide là một loại sợi tổng hợp có độ bền cao, chống nước và nhanh khô, giúp áo polo thoáng khí và thoải mái khi mặc. Spandex là một chất liệu co giãn, khi vận động sẽ tạo cảm giác thoải mái, mát mẻ khi mặc.\n\nThiết kế áo Polo Ice Cooling\nÁo Polo Ice Cooling là sự lựa chọn của các chàng trai thanh lịch, lịch sự, dễ phối đồ với thiết kế:\n\nChất liệu vải co giãn 4 chiều giúp thoải mái vận động\n\nĐường tay áo và lai áo cắt laser gọn gàng, ép seam giúp tối giản hóa đường may\n\nTính năng Cooling - mát mẻ giữ bề mặt vải luôn mát lạnh, cơ thể thoải mái.\n\nNút áo sử dụng nút bấm hiện đại, thay nút cài, giúp thao tác dễ dàng hơn\n\nCách mix&match áo Polo Ice Cooling\nLà mẫu áo thun polo nam “quốc dân” với màu sắc và thiết kế đơn giản, dễ mặc. Các quý ông có thể mix&match áo Polo Ice Cooling như sau:\n\nQuần jeans mix cùng áo Polo Ice Cooling giúp các chàng trông trẻ trung, lịch sự và năng động hơn.\n\nTrong mùa hè, bạn có thể phối áo Polo Ice Cooling với quần shorts để tạo nên một diện mạo thoải mái và thể thao. \n\nÁo Polo Ice Cooling và quần kaki sẽ giúp các quý ông trông trẻ trung, nghiêm túc và lịch sự hơn. Bạn cũng có thể bổ sung thêm 1 chiếc áo vest bên ngoài để tăng sự chỉn chu, sang trọng mà vẫn rất năng động và trẻ trung.\n\nCách giặt và bảo quản áo Polo Ice Cooling",
+      "price": 349000,
+      "salePrice": 249000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 181,
+      "name": "Áo Polo Nam Cafe Essentials",
+      "description": "- Chất liệu: 50% S.Café + 50% Recycled PET\n- Sợi S.Café có tính kháng khuẩn tự nhiên và chống tia UV\n- Thành phần tự nhiên giúp hơi ẩm khỏi vải nhanh khô\n- Bo cổ dùng sợi Hightwisted 45D/75D tạo co giãn và bền form\n- Phù hợp với: đi làm, đi chơi\n- Kiểu dáng Regular fit\n- Tự hào sản xuất tại Việt Nam",
+      "price": 299000,
+      "salePrice": 269000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 182,
+      "name": "Áo Polo Nam Cafe Bo Kẻ",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 329000,
+      "salePrice": 279000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 183,
+      "name": "Áo Polo Thể Thao Pro Active 1595 Phối Màu",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 249000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo polo",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 184,
+      "name": "Áo Sơ mi dài tay Café-DriS",
+      "description": "Áo sơ mi dài tay Café-DriS mới ra mắt thị trường đã nhanh chóng nhận được sự yêu thích và lựa chọn của nhiều quý ông. Hãy để Coolmate giúp bạn điểm qua những lý do nên sở hữu ngay chiếc áo sơ mi dài tay đặc biệt này nhé. \n\n1. Chất liệu Cafe cao cấp vượt trội\nVải Cafe sở hữu các tính năng vượt trội sau:\n\nKiểm soát mùi: Phân tử cafe có tác dụng hấp thụ mùi một cách tự nhiên, khử mọi mùi hôi khó chịu, giúp bạn tự tin cả ngày dài\nNhanh khô: Công nghệ Hydroponic giúp mồ hôi, hơi ấm bốc hơi nhanh hơn khỏi bề mặt vải, giúp áo luôn khô thoáng, giúp bạn thêm thoải mái hơn.\nChống tia UV: Vải cafe có khả năng chống tia UV tự nhiên, giúp bảo vệ da khỏi tác động xấu từ ánh nắng mặt trời, giúp bạn thoải mái hoạt động ngoài trời không lo hại sức khoẻ.\nMát mẻ: Vải cafe sở hữu khả năng điều hoà cơ thể mát hơn 1-2 độ so với nhiệt độ ngoài trời, giúp bạn lúc nào cũng cảm giác mát mẻ, thoải mái, đặc biệt trong điều kiện nóng ẩm ngày hè.\n\n2. Sản phẩm tái chế kết hợp bã cà phê và chai nhựa\nLà nguyên liệu tái chế bền vững, mặc áo polo cafe là bạn đang góp phần vào việc bảo vệ môi trường xanh sạch.\n\n3. Kiểu dáng phong cách công sở\nThiết kế phom dáng ôm sát vừa vặn, phong cách trang trọng công sở, thích hợp mặc công sở, đi công tác, đi họp đối tác. Ngoài ra, chàng có thể diện chúng đi chơi du lịch với phong cách lịch lãm và nam tính.\n\n",
+      "price": 499000,
+      "salePrice": 449000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Xám",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 185,
+      "name": " Áo sơ mi Overshirt 100% Cotton",
+      "description": "Dòng sản phẩm sơ mi mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng nhu cầu của nam giới, dễ dàng phối đồ từ phong cách công sở đến chàng trai năng động",
+      "price": 399000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 186,
+      "name": " Áo sơ mi dài tay Modal Essential",
+      "description": "Dòng sản phẩm sơ mi mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng nhu cầu của nam giới, dễ dàng phối đồ từ phong cách công sở đến chàng trai năng động",
+      "price": 499000,
+      "salePrice": 429000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo sơ mi",
+        "Áo dài tay",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Trắng",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 187,
+      "name": "Áo phao dày Ultrawarm Puffer",
+      "description": "Chất liệu: 100% Polyester Sorona\nKiểu dáng: Regular fit\nPhù hợp: Mặc giữ ấm\nTính năng: \nChống gió và giữ ấm\nTúi đựng hai bên tiện lợi",
+      "price": 899000,
+      "salePrice": 699000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo khoác",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 188,
+      "name": " Áo Khoác Knit Đa Năng Chống UV",
+      "description": "Dòng sản phẩm sơ mi mang đến những sản phẩm thiết yếu và cơ bản nhất đáp ứng nhu cầu của nam giới, dễ dàng phối đồ từ phong cách công sở đến chàng trai năng động",
+      "price": 499000,
+      "salePrice": 429000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo khoác",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Xám"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 189,
+      "name": "Áo Khoác Nam có mũ Daily Wear",
+      "description": "Chất liệu: 100% Polyester\nKiểu dáng: Regular fit\nPhù hợp: Mặc hàng ngày\nDùng trong thời tiết mưa gió hoặc\nTính năng: Logo có in phản quang",
+      "price": 499000,
+      "salePrice": 429000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo dài tay",
+        "Áo khoác",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 190,
+      "name": "Áo Tanktop thể thao Melange",
+      "description": "Essentials III - một dòng sản phẩm được sinh ra với định hướng là must have cho bất kỳ ai tập gym - từ mới tập cho đến tập lâu năm, phù hợp với mọi động tác khó nhằn trong bộ môn này từ cardio đến body weight...",
+      "price": 179000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xám",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 191,
+      "name": "Áo Singlet chạy bộ Advanced Vent Tech",
+      "description": "- Thành phần Vải chính: 100% Polyester với kiểu dệt Knit - Square\n- Thành phần vải phối: 92%Polyester 8%Spandex kiểu dệt Knit Mesh\n- Công nghệ Exdry, thấm hút và nhanh khô.\n- Giảm ma sát.\n- Tự hào sản xuất tại Nhà máy Việt Nam.",
+      "price": 199000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 192,
+      "name": "Áo sát nách Training Comfort",
+      "description": "Training Comfort - một dòng sản phẩm được sinh ra với định hướng là must have cho bất kỳ ai tập gym - từ mới tập cho đến tập lâu năm, phù hợp với mọi động tác khó nhằn trong bộ môn này từ cardio đến body weight...",
+      "price": 249000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Xám",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 193,
+      "name": "Áo Singlet Chạy Bộ Không Đường May CoolFast",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 359000,
+      "salePrice": 259000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 194,
+      "name": " Áo Tanktop Gym Essentials II",
+      "description": "Essentials II - một dòng sản phẩm được sinh ra với định hướng là must have cho bất kỳ ai tập gym - từ mới tập cho đến tập lâu năm, phù hợp với mọi động tác khó nhằn trong bộ môn này từ cardio đến body weight...",
+      "price": 179000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 195,
+      "name": "Áo Gym Drop Arm",
+      "description": "Thiết kế đơn giản, năng động. Chất liệu vải co giãn, thuận tiện với việc đi lại giúp bạn luôn sẵn sàng mặc ở tại nhà hay bất cứ địa điểm nào.",
+      "price": 179000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen",
+        "Xanh navy",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 196,
+      "name": "Áo Singlet Chạy Bộ Graphic Dot",
+      "description": "Từ những sự đơn giản trong thiết kế đã giúp giảm tối đa sự ma sát hóa với không khí trong quá trình vận động. Ngoài ra, kiểu dệt  và công nghệ còn mang đến sự trải nghiệm mát mẻ và thoải mái tuyệt đối.",
+      "price": 189000,
+      "salePrice": 168998,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Xanh",
+        "Đỏ",
+        "Xanh rêu"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 197,
+      "name": "Áo Tanktop Nam Thể Thao T2",
+      "description": "Từ chạy bộ sáng sớm đến tập gym buổi chiều, bạn sẽ luôn thoải mái và tự tin hướng đến các mục tiêu tập luyện với chiếc áo tank top với thiết kế mới khoét nách của nhà Coolmate này. Dáng áo suông phù hợp với nhiều dáng người khác nhau, giúp bạn vận động tự nhiên, cùng với công nghệ hoàn thiện vải Quick-dry (Nhanh khô) & Wicking (Thấm hút) sẽ giúp bạn luôn khô thoáng.\n\nMột chiếc áo sát nách thể thao nam thoáng mát tối đa sẽ giúp cho bạn thoải mái vận động tự nhiên :\n\nSợi tính năng Quick-dry giúp vải có khả năng thấm hút mồ hôi nhanh và thoát nhiệt tốt  \n\nKiểu dệt Twill (chéo) mới mang lại cảm giác thoải mái khi mặc  \n\nLogo được in phản quang hiện đại tăng độ nhận biết khi vào chiều tối\n\nSiêu nhẹ\n\nCo giãn thoải mái\n",
+      "price": 179000,
+      "salePrice": 63000,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Áo nam",
+        "Áo Tanktop",
+        "Áo thể thao",
+        "Mặc hàng ngày",
+        "Đồ thể thao"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 198,
+      "name": "Quần bơi Trunk Summer Cool 5 inch cạp rời",
+      "description": "- Thành phần: 53% Rec Polyester + 47% PBT\n- Kiểu dệt Warp Knit\n- Fast Dry: Không bị đọng nước và nhanh khô\n- Vải bơi có tính năng Kháng Clo và Chống tia UV chỉ số UPF40+\n- Dây rút dễ dàng điều chỉnh độ vừa vặn\n- Bề mặt vải mềm mại, dễ chịu với da\n- Kiểu dáng boxer trunk trẻ trung, thoải mái\n- Tự hào sản xuất tại Việt Nam",
+      "price": 189000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Quần áo",
+        "Đồ lót",
+        "Quần bơi",
+        "Trunk (Boxer)",
+        "Mặc hàng ngày"
+      ],
+      "colors": [
+        "Xanh",
+        "Đen"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 199,
+      "name": "Thắt lưng nam Coolmate da bò Mill khoá gài khoá tự động",
+      "description": "Sự tối giản tạo nên sự lịch lãm, với tông màu trầm cùng với chất da cứng cáp được mài dũa bởi đôi bàn tay khéo léo, đầy tâm huyết biến người đàn ông thành một điểm nhấn không hề lạc lõng giữa đám đông.",
+      "price": 499000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ví/Thắt lưng"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 200,
+      "name": "Thắt lưng nam Coolmate da bò Mill Lau khoá cài bấm giả đầu kim",
+      "description": "Sự tối giản tạo nên sự lịch lãm, với tông màu trầm cùng với chất da cứng cáp được mài dũa bởi đôi bàn tay khéo léo, đầy tâm huyết biến người đàn ông thành một điểm nhấn không hề lạc lõng giữa đám đông.",
+      "price": 499000,
+      "salePrice": 429000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ví/Thắt lưng"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 201,
+      "name": "Thắt lưng nam Coolmate da bò Mill khoá gài bấm",
+      "description": "Sự tối giản tạo nên sự lịch lãm, với tông màu trầm cùng với chất da cứng cáp được mài dũa bởi đôi bàn tay khéo léo, đầy tâm huyết biến người đàn ông thành một điểm nhấn không hề lạc lõng giữa đám đông.",
+      "price": 499000,
+      "salePrice": 0,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ví/Thắt lưng"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 202,
+      "name": " Thắt lưng nam Coolmate da bò Mill khoá gài kim",
+      "description": "Sự tối giản tạo nên sự lịch lãm, với tông màu trầm cùng với chất da cứng cáp được mài dũa bởi đôi bàn tay khéo léo, đầy tâm huyết biến người đàn ông thành một điểm nhấn không hề lạc lõng giữa đám đông.",
+      "price": 499000,
+      "salePrice": 429000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ví/Thắt lưng"
+      ],
+      "colors": [
+        "Đen"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 203,
+      "name": "Cốc giữ nhiệt Inox Coolmate",
+      "description": "Với cuộc sống bận rộn hàng ngày, chúng ta sẽ thường luôn cần 1 chiếc cốc bên mình. Cốc Coolmate vừa nhỏ gọn vừa dễ dàng mang theo, là người bạn đồng hành hoàn hảo để bạn tận hưởng đồ uống yêu thích của mình một cách trọn vẹn và dễ dàng.",
+      "price": 199000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ly/Cốc"
+      ],
+      "colors": [
+        "Trắng",
+        "Kem"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": 204,
+      "name": "Cốc Inox Coolmate",
+      "description": "Với cuộc sống bận rộn hàng ngày, chúng ta sẽ thường luôn cần 1 chiếc cốc bên mình. Cốc Coolmate vừa nhỏ gọn vừa dễ dàng mang theo, là người bạn đồng hành hoàn hảo để bạn tận hưởng đồ uống yêu thích của mình một cách trọn vẹn và dễ dàng.",
+      "price": 199000,
+      "salePrice": 169000,
+      "averageRating": 5,
+      "categories": [
+        "Phụ kiện",
+        "Ly/Cốc"
+      ],
+      "colors": [
+        "Đen",
+        "Trắng",
+        "Xanh navy"
+      ],
+      "sizes": [
+        "M"
+      ],
+      "feedbacks": []
+    }
+  ]
+}
