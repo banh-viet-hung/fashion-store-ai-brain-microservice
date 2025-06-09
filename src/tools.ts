@@ -1,6 +1,8 @@
 import { z } from "zod";
 import { tool } from "@langchain/core/tools";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
+import { ChatPromptTemplate } from "@langchain/core/prompts";
 
 /**
  * Creates a retrieval tool that can be used by the Agent
@@ -10,24 +12,46 @@ export function createRetrieveTool(vectorStore: MemoryVectorStore) {
 
     const retrieve = tool(
         async ({ query }) => {
-            console.log(`Retrieving product information for query: "${query}"`);
+            console.log(`Original query: "${query}"`);
 
-            // 1. Increase the number of initial results to get a broader context
-            const K = 50;
-            const initialDocs = await vectorStore.similaritySearch(query, K);
+            // Agent to generate a better query
+            const llm = new ChatGoogleGenerativeAI({
+                model: "gemini-2.5-flash-preview-05-20",
+                temperature: 0,
+            });
 
-            if (initialDocs.length === 0) {
-                return "No relevant product information found. Please try a different query or check if product PDF files have been loaded.";
-            }
+            const queryExpansionPrompt = ChatPromptTemplate.fromMessages([
+                [
+                    "system",
+                    `You are a helpful AI assistant for a fashion store. Your task is to expand a user's search query to be more comprehensive for a vector database search.
+Expand the given query into a comma-separated list of related search terms that are likely to appear in a product catalog.
+For example:
+- user: "jacket"
+- assistant: "men's jacket, women's jacket, winter jacket, leather jacket, denim jacket"
+- user: "áo khoác"
+- assistant: "áo khoác nam, áo khoác nữ, áo phao, áo khoác da, áo khoác bò"
+Return only the expanded query terms, separated by commas. Do not add any introductory text.`,
+                ],
+                ["human", "{query}"],
+            ]);
 
-            // 2. Re-rank the results based on relevance to the query keywords
-            // This helps to filter out documents that are semantically similar but not directly relevant.
-            const rerankedDocs = initialDocs.filter(doc =>
-                doc.pageContent.toLowerCase().includes(query.toLowerCase())
+            const queryExpansionChain = queryExpansionPrompt.pipe(llm);
+            const expandedQueryResponse = await queryExpansionChain.invoke({
+                query,
+            });
+            const expandedQuery = expandedQueryResponse.content.toString();
+
+            const finalQuery = `${query}, ${expandedQuery}`;
+            console.log(`Expanded search query: "${finalQuery}"`);
+
+            const retrievedDocs = await vectorStore.similaritySearch(
+                finalQuery,
+                100
             );
 
-            // Use re-ranked docs if they exist, otherwise fall back to initial results
-            const retrievedDocs = rerankedDocs.length > 0 ? rerankedDocs : initialDocs;
+            if (retrievedDocs.length === 0) {
+                return "No relevant product information found. Please try a different query or check if product PDF files have been loaded.";
+            }
 
             // Group content by source document
             const groupedBySource: Record<string, string[]> = {};
