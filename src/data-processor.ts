@@ -30,13 +30,6 @@ export async function processProductPDFs(vectorStore: MemoryVectorStore, pdfDire
 
     console.log(`Found ${files.length} PDF file(s)`);
 
-    // Configure text splitter for better information retrieval
-    const splitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 500,           // Smaller chunks for more precise retrieval
-        chunkOverlap: 200,        // Higher overlap to maintain context between chunks
-        separators: ["\n\n", "\n", ". ", ", ", " ", ""],  // Custom separators for better semantic chunks
-    });
-
     // Process each PDF file
     let totalChunks = 0;
     for (const file of files) {
@@ -45,29 +38,26 @@ export async function processProductPDFs(vectorStore: MemoryVectorStore, pdfDire
 
         try {
             // Load PDF file
-            const loader = new PDFLoader(filePath, {
-                splitPages: true,  // Split by page for better organization
-            });
+            const loader = new PDFLoader(filePath);
             const docs = await loader.load();
             console.log(`Loaded ${docs.length} page(s) from ${file}`);
 
             // Split documents into smaller chunks
+            const splitter = new RecursiveCharacterTextSplitter({
+                chunkSize: 1000,
+                chunkOverlap: 200,
+            });
+
             const splits = await splitter.splitDocuments(docs);
             console.log(`Split ${file} into ${splits.length} chunks`);
             totalChunks += splits.length;
 
             // Add metadata to identify the source file
             const enhancedSplits = splits.map(split => {
-                // Extract page number if available
-                const pageNumber = split.metadata.loc?.pageNumber || split.metadata.page || null;
-
-                // Add detailed metadata
                 split.metadata = {
                     ...split.metadata,
                     source: file,
-                    documentType: 'product',
-                    page: pageNumber,
-                    chunkId: `${file}-${pageNumber || 'unknown'}-${Math.random().toString(36).substring(2, 7)}`,
+                    documentType: 'product'
                 };
                 return split;
             });
