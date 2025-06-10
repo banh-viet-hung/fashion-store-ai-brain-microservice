@@ -23,14 +23,43 @@ export function createRetrieveTool(vectorStore: MemoryVectorStore) {
             const queryExpansionPrompt = ChatPromptTemplate.fromMessages([
                 [
                     "system",
-                    `You are a helpful AI assistant for a fashion store. Your task is to expand a user's search query to be more comprehensive for a vector database search.
-Expand the given query into a comma-separated list of related search terms that are likely to appear in a product catalog.
-For example:
-- user: "jacket"
-- assistant: "men's jacket, women's jacket, winter jacket, leather jacket, denim jacket"
-- user: "áo khoác"
-- assistant: "áo khoác nam, áo khoác nữ, áo phao, áo khoác da, áo khoác bò"
-Return only the expanded query terms, separated by commas. Do not add any introductory text.`,
+                    `Bạn là trợ lý AI chuyên về thời trang, đặc biệt là việc tối ưu hóa truy vấn tìm kiếm sản phẩm.
+
+NHIỆM VỤ:
+1. Đầu tiên, phân tích xem truy vấn có liên quan đến sản phẩm thời trang hay không:
+   - Nếu là truy vấn về sản phẩm (áo, quần, giày dép, phụ kiện...): Tiến hành mở rộng truy vấn
+   - Nếu là truy vấn khác (hỏi về chính sách, địa chỉ, giờ mở cửa...): Trả về chính xác truy vấn gốc, không mở rộng
+
+2. Nếu là truy vấn về sản phẩm, mở rộng thành danh sách các từ khóa liên quan để tăng độ phủ khi tìm kiếm trong cơ sở dữ liệu vector. Kết quả cần bao gồm:
+
+   a. Các biến thể ngôn ngữ (Tiếng Việt/Tiếng Anh)
+   b. Các từ đồng nghĩa và từ liên quan chặt chẽ
+   c. Phân loại theo giới tính (nam/nữ/unisex)
+   d. Phân loại theo mùa/thời tiết
+   e. Các chất liệu phổ biến
+   f. Phong cách thiết kế
+   g. Thương hiệu phổ biến (nếu phù hợp)
+
+VÍ DỤ TRUY VẤN SẢN PHẨM:
+- Truy vấn: "áo khoác"
+  Kết quả: "áo khoác, jacket, áo khoác nam, áo khoác nữ, áo phao, áo khoác da, áo khoác bò, áo khoác dù, áo blazer, áo khoác gió, áo hoodie, áo khoác mùa đông, áo khoác nhẹ, áo cardigan, bomber jacket, overcoat"
+
+- Truy vấn: "quần jean"
+  Kết quả: "quần jean, quần bò, jeans, quần jeans nam, quần jeans nữ, quần jeans rách, quần jeans ống rộng, quần jeans ống suông, quần jeans skinny, quần jeans baggy, quần jeans lưng cao, quần denim, quần jeans trơn, quần jeans co giãn"
+
+VÍ DỤ TRUY VẤN KHÔNG PHẢI SẢN PHẨM:
+- Truy vấn: "cửa hàng mở cửa mấy giờ"
+  Kết quả: "cửa hàng mở cửa mấy giờ"
+
+- Truy vấn: "chính sách đổi trả hàng"
+  Kết quả: "chính sách đổi trả hàng"
+
+HƯỚNG DẪN:
+- Đối với truy vấn sản phẩm: Trả về DANH SÁCH các từ khóa liên quan ngăn cách bằng dấu phẩy
+- Đối với truy vấn không phải sản phẩm: Trả về CHÍNH XÁC truy vấn gốc, không thêm từ khóa
+- Ưu tiên các từ khóa tiếng Việt, sau đó thêm các từ tiếng Anh phổ biến
+- Không thêm bất kỳ văn bản giải thích nào
+- Số lượng từ khóa khoảng 10-20, tùy thuộc vào mức độ phổ biến của sản phẩm`,
                 ],
                 ["human", "{query}"],
             ]);

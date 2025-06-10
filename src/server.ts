@@ -56,7 +56,7 @@ app.post("/api/chat", async (req, res) => {
         const { message, sessionId } = req.body;
 
         if (!message) {
-            return res.status(400).json({ error: "Message is required" });
+            return res.status(400).json({ error: "Tin nhắn không được để trống" });
         }
 
         const userId = sessionId || "default-user";
@@ -69,39 +69,72 @@ app.post("/api/chat", async (req, res) => {
         const threadId = threadMap.get(userId)!;
         const config = getThreadConfig(threadId);
 
+        console.log(`[Chat API] Xử lý tin nhắn từ người dùng '${userId}': "${message}"`);
+
         // Invoke agent with message
+        const startTime = Date.now();
         const result = await agent.invoke(
             { messages: [new HumanMessage(message)] },
             config
         );
+        const processingTime = Date.now() - startTime;
 
-        // Determine agent status chỉ kiểm tra message cuối cùng
-        let status = "thinking";
-        const lastMsg = result.messages[result.messages.length - 1];
-        if (
-            (lastMsg.tool_calls && lastMsg.tool_calls.length > 0) ||
-            (lastMsg.functionCall && Object.keys(lastMsg.functionCall).length > 0)
-        ) {
-            status = "retrieving";
-            console.log("[Product Agent] Đang gọi tool:",
-                lastMsg.tool_calls ? JSON.stringify(lastMsg.tool_calls) : JSON.stringify(lastMsg.functionCall)
-            );
+        // Phân tích trạng thái agent chi tiết hơn
+        let status = "complete";
+        let toolsUsed = [];
+
+        // Kiểm tra các tin nhắn để xác định công cụ nào được sử dụng
+        for (const msg of result.messages) {
+            if (msg.tool_calls && msg.tool_calls.length > 0) {
+                status = "processing";
+                toolsUsed = msg.tool_calls.map((tool: any) => tool.name || "unknown_tool");
+
+                if (toolsUsed.includes("retrieve")) {
+                    status = "retrieving";
+                    console.log("[Product Agent] Đang tìm kiếm thông tin sản phẩm");
+                }
+            } else if (msg.functionCall && Object.keys(msg.functionCall).length > 0) {
+                status = "processing";
+                const toolName = msg.functionCall.name || "unknown_function";
+                toolsUsed.push(toolName);
+
+                if (toolName === "retrieve") {
+                    status = "retrieving";
+                    console.log("[Product Agent] Đang tìm kiếm thông tin sản phẩm");
+                }
+            }
         }
 
         // Extract AI message content
         const aiMessageIndex = result.messages.length - 1;
         const aiMessage = result.messages[aiMessageIndex].content;
 
+        console.log(`[Chat API] Hoàn thành xử lý tin nhắn (${processingTime}ms), trạng thái: ${status}`);
+
         res.json({
             response: aiMessage,
             sessionId: userId,
-            status
+            status,
+            toolsUsed: toolsUsed.length > 0 ? toolsUsed : undefined,
+            processingTime
         });
     } catch (error: any) {
-        console.error("Error processing chat:", error);
+        console.error("Lỗi xử lý tin nhắn:", error);
+
+        // Chi tiết lỗi cho debug
+        const errorDetails = {
+            message: error.message || "Lỗi không xác định",
+            stack: process.env.NODE_ENV === "development" ? error.stack : undefined,
+            name: error.name,
+            code: error.code
+        };
+
+        console.error("Chi tiết lỗi:", JSON.stringify(errorDetails, null, 2));
+
         res.status(500).json({
-            error: "Failed to process message",
-            details: error.message || "Unknown error"
+            error: "Không thể xử lý tin nhắn của bạn",
+            errorMessage: error.message || "Đã xảy ra lỗi không xác định",
+            suggestion: "Vui lòng thử lại sau hoặc liên hệ hỗ trợ"
         });
     }
 });
