@@ -6,6 +6,7 @@ import { initChatModel, initEmbeddingModel } from "./models";
 import { loadData } from "./data-processor";
 import { createRetrieveTool } from "./tools";
 import { createStatefulAgent, getThreadConfig } from "./agent";
+import { ChatbotResponse } from "./schema";
 
 const app = express();
 
@@ -109,10 +110,17 @@ app.post("/api/chat", async (req, res) => {
         const aiMessageIndex = result.messages.length - 1;
         const aiMessage = result.messages[aiMessageIndex].content;
 
+        let structuredResponse;
+        if (typeof aiMessage === 'object' && aiMessage !== null) {
+            structuredResponse = aiMessage;
+        } else {
+            structuredResponse = { answer: aiMessage, response_type: 'general_info' };
+        }
+
         console.log(`[Chat API] Hoàn thành xử lý tin nhắn (${processingTime}ms), trạng thái: ${status}`);
 
         res.json({
-            response: aiMessage,
+            response: structuredResponse,
             sessionId: userId,
             status,
             toolsUsed: toolsUsed.length > 0 ? toolsUsed : undefined,
@@ -135,6 +143,26 @@ app.post("/api/chat", async (req, res) => {
             error: "Không thể xử lý tin nhắn của bạn",
             errorMessage: error.message || "Đã xảy ra lỗi không xác định",
             suggestion: "Vui lòng thử lại sau hoặc liên hệ hỗ trợ"
+        });
+    }
+});
+
+// Structured LLM output endpoint (không qua agent)
+app.post("/api/structured-chat", async (req, res) => {
+    try {
+        const { message } = req.body;
+        if (!message) {
+            return res.status(400).json({ error: "Tin nhắn không được để trống" });
+        }
+        const llm = initChatModel();
+        const structuredLLM = llm.withStructuredOutput(ChatbotResponse);
+        const result = await structuredLLM.invoke(message);
+        res.json({ response: result });
+    } catch (error: any) {
+        console.error("Lỗi xử lý structured LLM:", error);
+        res.status(500).json({
+            error: "Không thể xử lý structured LLM",
+            errorMessage: error.message || "Đã xảy ra lỗi không xác định"
         });
     }
 });

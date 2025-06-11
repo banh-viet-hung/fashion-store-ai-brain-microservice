@@ -15,17 +15,77 @@ document.addEventListener('DOMContentLoaded', () => {
         const contentDiv = document.createElement('div');
         contentDiv.className = 'message-content';
 
-        // Format markdown-like text (basic formatting only)
-        const formattedContent = content
-            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-            .replace(/\*(.*?)\*/g, '<em>$1</em>')
-            .replace(/\n/g, '<br>');
+        // Nếu content là object structured
+        if (typeof content === 'object' && content !== null) {
+            // 1. Hiển thị answer (markdown)
+            let answerHtml = '';
+            if (content.answer) {
+                answerHtml = content.answer
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                    .replace(/\n/g, '<br>');
+            }
+            contentDiv.innerHTML = `<p>${answerHtml}</p>`;
 
-        contentDiv.innerHTML = `<p>${formattedContent}</p>`;
+            // 2. Hiển thị related_products
+            if (Array.isArray(content.related_products) && content.related_products.length > 0) {
+                const productsDiv = document.createElement('div');
+                productsDiv.className = 'related-products';
+                productsDiv.innerHTML = '<strong>Sản phẩm liên quan:</strong>';
+                content.related_products.forEach(prod => {
+                    const prodDiv = document.createElement('div');
+                    prodDiv.className = 'product-item';
+                    prodDiv.innerHTML = `
+                        <div><strong>${prod.name}</strong> (${prod.id})</div>
+                        <div>${prod.description || ''}</div>
+                        <div>Giá: ${prod.price ? prod.price + '₫' : 'N/A'}${prod.sale_price ? ' <span style="color:red">' + prod.sale_price + '₫</span>' : ''}</div>
+                    `;
+                    productsDiv.appendChild(prodDiv);
+                });
+                contentDiv.appendChild(productsDiv);
+            }
+
+            // 3. Hiển thị followup_questions
+            if (Array.isArray(content.followup_questions) && content.followup_questions.length > 0) {
+                const followDiv = document.createElement('div');
+                followDiv.className = 'followup-questions';
+                followDiv.innerHTML = '<strong>Câu hỏi gợi ý:</strong> ' + content.followup_questions.map(q => `<span class="followup">${q}</span>`).join(' | ');
+                contentDiv.appendChild(followDiv);
+            }
+
+            // 4. Hiển thị suggested_actions
+            if (Array.isArray(content.suggested_actions) && content.suggested_actions.length > 0) {
+                const actionsDiv = document.createElement('div');
+                actionsDiv.className = 'suggested-actions';
+                content.suggested_actions.forEach(action => {
+                    const btn = document.createElement('button');
+                    btn.className = 'action-btn';
+                    btn.innerText = action.text;
+                    btn.onclick = () => {
+                        if (action.type === 'quick_reply') {
+                            messageInput.value = action.value;
+                            messageInput.focus();
+                        } else if (action.type === 'link') {
+                            window.open(action.value, '_blank');
+                        } else if (action.type === 'contact_support') {
+                            alert('Vui lòng liên hệ bộ phận hỗ trợ!');
+                        }
+                    };
+                    actionsDiv.appendChild(btn);
+                });
+                contentDiv.appendChild(actionsDiv);
+            }
+        } else {
+            // Format markdown-like text (basic formatting only)
+            const formattedContent = content
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/\n/g, '<br>');
+            contentDiv.innerHTML = `<p>${formattedContent}</p>`;
+        }
+
         messageDiv.appendChild(contentDiv);
-
         chatMessages.appendChild(messageDiv);
-
         // Scroll to bottom
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
