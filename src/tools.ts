@@ -55,7 +55,7 @@ VÍ DỤ TRUY VẤN KHÔNG PHẢI SẢN PHẨM:
   Kết quả: "chính sách đổi trả hàng"
 
 HƯỚNG DẪN:
-- Đối với truy vấn sản phẩm: Trả về DANH SÁCH các từ khóa liên quan ngăn cách bằng dấu phẩy
+- Đối với truy vấn sản phẩm: Trả về DANH SÁCH các từ khóa liên quan ngăn cách bằng dấu phẩy,
 - Đối với truy vấn không phải sản phẩm: Trả về CHÍNH XÁC truy vấn gốc, không thêm từ khóa
 - Ưu tiên các từ khóa tiếng Việt, sau đó thêm các từ tiếng Anh phổ biến
 - Không thêm bất kỳ văn bản giải thích nào
@@ -82,25 +82,32 @@ HƯỚNG DẪN:
                 return "No relevant product information found. Please try a different query or check if product PDF files have been loaded.";
             }
 
-            // Group content by source document
-            const groupedBySource: Record<string, string[]> = {};
+            // Format products with their metadata
+            const productDetails = retrievedDocs.map(doc => {
+                // Extract essential metadata
+                const { id, name, price, salePrice, description } = doc.metadata;
 
-            retrievedDocs.forEach(doc => {
-                const source = doc.metadata.source || "Unknown Source";
-                if (!groupedBySource[source]) {
-                    groupedBySource[source] = [];
-                }
-                groupedBySource[source].push(doc.pageContent);
+                // Create formatted product entry with explicit ID reference
+                return {
+                    product_info: doc.pageContent,
+                    metadata: {
+                        id: id,  // Explicitly include the numeric ID
+                        name: name || "Unknown",
+                        price: price,
+                        sale_price: salePrice,
+                        description: description || doc.pageContent.substring(0, 100)
+                    }
+                };
             });
 
-            // Format the output for better readability
-            const formattedResults = Object.entries(groupedBySource)
-                .map(([source, contents]) => {
-                    return `Product Catalog: ${source}\n\nInformation:\n${contents.join('\n---\n')}`;
-                })
-                .join('\n\n' + '-'.repeat(40) + '\n\n');
+            // Format the output with clear product IDs for the agent to use
+            const formattedResults = `Retrieved ${productDetails.length} products:\n\n` +
+                productDetails.map(product => {
+                    return `PRODUCT ID: ${product.metadata.id}\nNAME: ${product.metadata.name}\nPRICE: ${product.metadata.price}\nSALE PRICE: ${product.metadata.sale_price}\nDETAILS: ${product.product_info}`;
+                }).join('\n\n' + '-'.repeat(40) + '\n\n');
 
-            return formattedResults;
+            // Add a reminder to use correct IDs
+            return formattedResults + "\n\nIMPORTANT: When referring to these products in your response, ALWAYS use the exact numeric PRODUCT ID values shown above.";
         },
         {
             name: "retrieve",

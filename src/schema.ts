@@ -2,7 +2,10 @@ import { z } from "zod";
 
 // Schema cho thông tin sản phẩm
 const ProductInfo = z.object({
-    id: z.string().describe("ID duy nhất của sản phẩm"),
+    id: z.number({
+        required_error: "ID sản phẩm là bắt buộc và phải là số",
+        invalid_type_error: "ID phải là số, không được là string hoặc kiểu dữ liệu khác"
+    }).int().positive().describe("ID duy nhất của sản phẩm PHẢI được lấy từ công cụ retrieve (PHẢI CHÍNH XÁC LÀ ID THỰC SỰ CỦA SẢN PHẨM ĐƯỢC LẤY TỪ CÔNG CỤ RETRIEVE CHỨ KHÔNG ĐƯỢC BỊA RA HOẶC LẤY TÊN SẢN PHẨM LÀM ID)"),
     name: z.string().describe("Tên sản phẩm"),
     price: z.number().optional().describe("Giá sản phẩm (VND)"),
     sale_price: z.number().optional().describe("Giá khuyến mãi sản phẩm (VND)"),
