@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
             sessionId = data._meta.sessionId; // Cập nhật sessionId từ server
-            displayBotMessage(data);
+            await displayBotMessage(data);
 
         } catch (error) {
             console.error('Error sending message:', error);
-            displayBotMessage({ answer: `Rất tiếc, đã có lỗi xảy ra. Vui lòng thử lại. \n\n*Chi tiết lỗi: ${error.message}*`, response_type: 'error' });
+            await displayBotMessage({ answer: `Rất tiếc, đã có lỗi xảy ra. Vui lòng thử lại. \n\n*Chi tiết lỗi: ${error.message}*`, response_type: 'error' });
         } finally {
             isLoading = false;
             typingIndicator.style.display = 'none';
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    function displayBotMessage(data) {
+    async function displayBotMessage(data) {
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', 'bot');
 
@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render related products
         if (data.related_products && data.related_products.length > 0) {
-            messageContent.appendChild(createProductsCarousel(data.related_products));
+            const productsCarousel = await createProductsCarousel(data.related_products);
+            messageContent.appendChild(productsCarousel);
         }
 
         // Render follow-up questions
@@ -113,27 +114,57 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    function createProductsCarousel(products) {
+    async function createProductsCarousel(products) {
         const carousel = document.createElement('div');
         carousel.className = 'products-carousel';
-        products.forEach(product => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            const price = product.price ? product.price.toLocaleString('vi-VN') + ' VNĐ' : 'N/A';
-            const salePrice = product.sale_price ? product.sale_price.toLocaleString('vi-VN') + ' VNĐ' : '';
 
-            let priceHTML = `<span class="original">${price}</span>`;
-            if (salePrice && product.sale_price > 0) {
-                priceHTML = `<span class="sale">${salePrice}</span> <span class="original">${price}</span>`;
+        for (const productRef of products) {
+            if (!productRef.id) continue;
+
+            try {
+                const response = await fetch(`http://localhost:8080/products/${productRef.id}`);
+                if (!response.ok) {
+                    console.error(`Failed to fetch product with ID ${productRef.id}. Status: ${response.status}`);
+                    continue;
+                }
+                const result = await response.json();
+                if (!result.success || !result.data) {
+                    console.error(`API did not return successful data for product ID ${productRef.id}`);
+                    continue;
+                }
+
+                const product = result.data;
+                const card = document.createElement('div');
+                card.className = 'product-card';
+
+                const price = product.price ? product.price.toLocaleString('vi-VN') + ' VNĐ' : 'N/A';
+                const salePrice = product.salePrice ? product.salePrice.toLocaleString('vi-VN') + ' VNĐ' : '';
+
+                let priceHTML = `<div class="price-original">${price}</div>`;
+                if (salePrice && product.salePrice > 0 && product.salePrice < product.price) {
+                    priceHTML = `<div class="price-sale">${salePrice}</div> <div class="price-original-slashed">${price}</div>`;
+                }
+
+                const imgHTML = product.imgForAi
+                    ? `<img src="${product.imgForAi}" alt="${product.name}" class="product-image">`
+                    : '<div class="product-image-placeholder"></div>';
+
+                const buyNowBtnHTML = `<a href="http://localhost:3000/product/${productRef.id}" target="_blank" class="buy-now-btn">Mua ngay</a>`;
+
+                card.innerHTML = `
+                    ${imgHTML}
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="price">${priceHTML}</div>
+                    </div>
+                    ${buyNowBtnHTML}
+                `;
+                carousel.appendChild(card);
+
+            } catch (error) {
+                console.error(`Error fetching or rendering product data for ID ${productRef.id}:`, error);
             }
-
-            card.innerHTML = `
-                <h3>${product.name}</h3>
-                <div class="price">${priceHTML}</div>
-                <p>${product.description || ''}</p>
-            `;
-            carousel.appendChild(card);
-        });
+        }
         return carousel;
     }
 
