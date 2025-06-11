@@ -51,30 +51,30 @@ export async function initializeAgent() {
 }
 
 // Helper function to extract JSON from code blocks if needed
-function extractJsonFromMessage(content: string): any {
-    // Check if content contains JSON code block
+function extractJsonFromMessage(content: string): any | null {
+    if (!content || typeof content !== 'string') {
+        return null;
+    }
+
+    // First, try to extract from a markdown code block
     const jsonRegex = /```(?:json)?\s*(\{[\s\S]*?\})\s*```/;
     const match = content.match(jsonRegex);
 
+    let jsonString = content;
     if (match && match[1]) {
-        try {
-            // Parse the JSON from the code block
-            return JSON.parse(match[1]);
-        } catch (e) {
-            console.warn("Failed to parse JSON from code block:", e);
-        }
+        jsonString = match[1];
     }
 
-    // Try to directly parse the content as JSON
+    // Now, try to parse the result (either the extracted block or the original string)
     try {
-        return JSON.parse(content);
+        return JSON.parse(jsonString);
     } catch (e) {
-        // If that fails too, return the original content
-        console.warn("Failed to parse content as JSON:", e);
+        const error = e as Error;
+        // Log the specific error for debugging
+        console.warn(`Failed to parse content as JSON: ${error.message}`);
+        // Return null to indicate a failure that the caller should handle
+        return null;
     }
-
-    // Return the original content if no JSON found or parsing failed
-    return content;
 }
 
 // Chat API endpoint
@@ -142,6 +142,14 @@ app.post("/api/chat", async (req, res) => {
         if (typeof aiMessage === 'string') {
             // Extract JSON if it's wrapped in code blocks or is already JSON
             responseData = extractJsonFromMessage(aiMessage);
+
+            if (!responseData) {
+                console.error("Failed to parse AI response into JSON. Sending fallback message.");
+                responseData = {
+                    answer: "Oh oh, tôi đói bụng quá nên lỡ ăn mất câu trả lời rồi. Bạn hỏi lại được hông!",
+                    response_type: 'no_info',
+                };
+            }
         } else if (typeof aiMessage === 'object' && aiMessage !== null) {
             // If it's already an object, use it directly
             responseData = aiMessage;
