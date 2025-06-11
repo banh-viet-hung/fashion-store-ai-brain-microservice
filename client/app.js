@@ -157,13 +157,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.className = 'quick-reply-btn';
                 button.textContent = action.text;
                 button.onclick = () => {
-                    sendMessage(action.value);
+                    const messageText = action.value || action.text;
+                    if (messageText && messageText.trim() !== '') {
+                        sendMessage(messageText);
+                    } else {
+                        console.error('Error: Quick reply has no text or value');
+                    }
                 };
             } else if (action.type === 'link') {
                 button.className = 'link-btn';
                 button.textContent = action.text;
                 button.onclick = () => {
-                    window.open(action.value, '_blank');
+                    const url = action.value || action.url || action.text;
+                    if (url && url.trim() !== '') {
+                        window.open(url, '_blank');
+                    } else {
+                        console.error('Error: Link has no valid URL');
+                    }
                 };
             }
             quickRepliesContainer.appendChild(button);
