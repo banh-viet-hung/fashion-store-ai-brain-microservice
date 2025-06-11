@@ -67,7 +67,12 @@ function extractJsonFromMessage(content: string): any | null {
 
     // Now, try to parse the result (either the extracted block or the original string)
     try {
-        return JSON.parse(jsonString);
+        const parsedJson = JSON.parse(jsonString);
+        if (!parsedJson.response_type) {
+            console.error("AI response was parsed as JSON but missing required 'response_type' property. Sending fallback message.");
+            return null;
+        }
+        return parsedJson;
     } catch (e) {
         const error = e as Error;
         // Log the specific error for debugging
@@ -149,10 +154,26 @@ app.post("/api/chat", async (req, res) => {
                     answer: "Oh oh, tôi đói bụng quá nên lỡ ăn mất câu trả lời rồi. Bạn hỏi lại được hông!",
                     response_type: 'no_info',
                 };
+            } else if (!responseData.response_type) {
+                // Trường hợp thêm: JSON hợp lệ nhưng thiếu thuộc tính response_type
+                console.error("AI response was parsed as JSON but missing required 'response_type' property. Sending fallback message.");
+                responseData = {
+                    answer: "Oh oh, tôi đói bụng quá nên lỡ ăn mất câu trả lời rồi. Bạn hỏi lại được hông!",
+                    response_type: 'no_info',
+                };
             }
         } else if (typeof aiMessage === 'object' && aiMessage !== null) {
             // If it's already an object, use it directly
             responseData = aiMessage;
+
+            // Kiểm tra nếu đối tượng không có response_type
+            if (!responseData.response_type) {
+                console.error("AI response object is missing required 'response_type' property. Sending fallback message.");
+                responseData = {
+                    answer: "Oh oh, tôi đói bụng quá nên lỡ ăn mất câu trả lời rồi. Bạn hỏi lại được hông!",
+                    response_type: 'no_info',
+                };
+            }
         } else {
             // Fallback for any other type
             responseData = {
