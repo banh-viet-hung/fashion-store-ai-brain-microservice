@@ -14,10 +14,9 @@ const ProductInfo = z.object({
 
 // Schema cho các hành động được đề xuất
 const SuggestedAction = z.object({
-    type: z.enum(["link", "quick_reply", "contact_support"]).describe("Loại hành động"),
-    text: z.string().describe("Văn bản hiển thị trên nút/link"),
-    value: z.string().describe("Giá trị được xử lý khi click (URL, hoặc message)"),
-    priority: z.enum(["high", "medium", "low"]).optional().describe("Độ ưu tiên hiển thị")
+    type: z.enum(["link", "quick_reply"]).describe("Loại hành động"),
+    text: z.string().describe("Văn bản hiển thị trên nút/link để người dùng chọn"),
+    value: z.string().describe("Giá trị được xử lý khi người dùng nhấn (URL, hoặc câu trả lời)"),
 });
 
 // Schema chính cho response
@@ -41,10 +40,10 @@ export const ChatbotResponse = z.object({
     related_products: z.array(ProductInfo).optional().describe("Danh sách sản phẩm liên quan"),
 
     // Câu hỏi tiếp theo được đề xuất
-    followup_questions: z.array(z.string()).optional().describe("Các câu hỏi gợi ý cho người dùng"),
+    followup_questions: z.array(z.string()).optional().describe("Các câu hỏi mà AGENT muốn hỏi người dùng để thu thập thêm thông tin hoặc làm rõ yêu cầu"),
 
     // Các hành động được đề xuất
-    suggested_actions: z.array(SuggestedAction).optional().describe("Các nút/hành động tương tác"),
+    suggested_actions: z.array(SuggestedAction).optional().describe("Các nút/hành động được gợi ý cho NGƯỜI DÙNG, trong đó quick_reply là các câu trả lời gợi ý cho các câu hỏi trong followup_questions"),
 
     // Cần chuyển sang nhân viên hỗ trợ
     escalate_to_human: z.boolean().optional().describe("Có cần chuyển sang nhân viên hỗ trợ không"),
