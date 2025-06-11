@@ -6,7 +6,6 @@ import { initChatModel, initEmbeddingModel } from "./models";
 import { loadData } from "./data-processor";
 import { createRetrieveTool } from "./tools";
 import { createStatefulAgent, getThreadConfig } from "./agent";
-import { ChatbotResponse } from "./schema";
 
 const app = express();
 
@@ -185,43 +184,6 @@ app.post("/api/chat", async (req, res) => {
             error: "Không thể xử lý tin nhắn của bạn",
             errorMessage: error.message || "Đã xảy ra lỗi không xác định",
             suggestion: "Vui lòng thử lại sau hoặc liên hệ hỗ trợ"
-        });
-    }
-});
-
-// Structured LLM output endpoint (không qua agent)
-app.post("/api/structured-chat", async (req, res) => {
-    try {
-        const { message, sessionId } = req.body;
-        if (!message) {
-            return res.status(400).json({ error: "Tin nhắn không được để trống" });
-        }
-
-        const userId = sessionId || "default-user";
-        const startTime = Date.now();
-
-        const llm = initChatModel();
-        const structuredLLM = llm.withStructuredOutput(ChatbotResponse);
-        const result = await structuredLLM.invoke(message);
-
-        const processingTime = Date.now() - startTime;
-
-        // Create response with metadata
-        const responseWithMeta = {
-            ...result,
-            _meta: {
-                sessionId: userId,
-                processingTime,
-                status: "complete"
-            }
-        };
-
-        res.json(responseWithMeta);
-    } catch (error: any) {
-        console.error("Lỗi xử lý structured LLM:", error);
-        res.status(500).json({
-            error: "Không thể xử lý structured LLM",
-            errorMessage: error.message || "Đã xảy ra lỗi không xác định"
         });
     }
 });

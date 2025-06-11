@@ -1,6 +1,5 @@
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 // Initialize the chat model
 export const initChatModel = () => {
@@ -20,9 +19,4 @@ export const initEmbeddingModel = () => {
         modelName: "text-embedding-004",
     });
     return embeddings;
-};
-
-// Create vector store with the embedding model
-export const createVectorStore = (embeddings: GoogleGenerativeAIEmbeddings) => {
-    return new MemoryVectorStore(embeddings);
 }; 

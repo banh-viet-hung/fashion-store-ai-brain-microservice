@@ -1,4 +1,3 @@
-import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import type { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import fs from "fs";
@@ -79,8 +78,6 @@ export async function processProductJSONs(vectorStore: MemoryVectorStore, jsonPa
         return { pageContent: productText, metadata };
     });
 
-    // Chunk hóa nếu cần (ở đây mỗi sản phẩm là 1 chunk)
-    // Nếu muốn chia nhỏ hơn, có thể dùng TextSplitter
     await vectorStore.addDocuments(documents);
     console.log(`Đã thêm ${documents.length} sản phẩm vào vector store từ JSON.`);
     return vectorStore;
