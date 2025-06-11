@@ -66,6 +66,14 @@ function extractJsonFromMessage(content: string): any {
         }
     }
 
+    // Try to directly parse the content as JSON
+    try {
+        return JSON.parse(content);
+    } catch (e) {
+        // If that fails too, return the original content
+        console.warn("Failed to parse content as JSON:", e);
+    }
+
     // Return the original content if no JSON found or parsing failed
     return content;
 }
@@ -101,7 +109,7 @@ app.post("/api/chat", async (req, res) => {
 
         // Phân tích trạng thái agent chi tiết hơn
         let status = "complete";
-        let toolsUsed = [];
+        let toolsUsed: string[] = [];
 
         // Kiểm tra các tin nhắn để xác định công cụ nào được sử dụng
         for (const msg of result.messages) {
@@ -129,17 +137,18 @@ app.post("/api/chat", async (req, res) => {
         const aiMessageIndex = result.messages.length - 1;
         const aiMessage = result.messages[aiMessageIndex].content;
 
-        // Process the response to directly return the structured JSON
-        let structuredResponse;
+        // Get the structured response directly
+        let responseData;
+
         if (typeof aiMessage === 'string') {
-            // Extract JSON if it's wrapped in code blocks
-            structuredResponse = extractJsonFromMessage(aiMessage);
+            // Extract JSON if it's wrapped in code blocks or is already JSON
+            responseData = extractJsonFromMessage(aiMessage);
         } else if (typeof aiMessage === 'object' && aiMessage !== null) {
             // If it's already an object, use it directly
-            structuredResponse = aiMessage;
+            responseData = aiMessage;
         } else {
             // Fallback for any other type
-            structuredResponse = {
+            responseData = {
                 answer: String(aiMessage),
                 response_type: 'general_info'
             };
@@ -147,9 +156,9 @@ app.post("/api/chat", async (req, res) => {
 
         console.log(`[Chat API] Hoàn thành xử lý tin nhắn (${processingTime}ms), trạng thái: ${status}`);
 
-        // Add metadata about the processing
-        const response = {
-            ...structuredResponse,
+        // Create response with metadata
+        const responseWithMeta = {
+            ...responseData,
             _meta: {
                 sessionId: userId,
                 processingTime,
@@ -158,7 +167,7 @@ app.post("/api/chat", async (req, res) => {
             }
         };
 
-        res.json(response);
+        res.json(responseWithMeta);
     } catch (error: any) {
         console.error("Lỗi xử lý tin nhắn:", error);
 
@@ -183,14 +192,31 @@ app.post("/api/chat", async (req, res) => {
 // Structured LLM output endpoint (không qua agent)
 app.post("/api/structured-chat", async (req, res) => {
     try {
-        const { message } = req.body;
+        const { message, sessionId } = req.body;
         if (!message) {
             return res.status(400).json({ error: "Tin nhắn không được để trống" });
         }
+
+        const userId = sessionId || "default-user";
+        const startTime = Date.now();
+
         const llm = initChatModel();
         const structuredLLM = llm.withStructuredOutput(ChatbotResponse);
         const result = await structuredLLM.invoke(message);
-        res.json(result);
+
+        const processingTime = Date.now() - startTime;
+
+        // Create response with metadata
+        const responseWithMeta = {
+            ...result,
+            _meta: {
+                sessionId: userId,
+                processingTime,
+                status: "complete"
+            }
+        };
+
+        res.json(responseWithMeta);
     } catch (error: any) {
         console.error("Lỗi xử lý structured LLM:", error);
         res.status(500).json({

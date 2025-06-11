@@ -58,7 +58,7 @@ HƯỚNG DẪN PHẢN HỒI STRUCTURED:
 
 5. "suggested_actions" là các hành động được gợi ý cho NGƯỜI DÙNG:
    - type "quick_reply": Các câu trả lời gợi ý cho NGƯỜI DÙNG để phản hồi các câu hỏi trong "followup_questions". Đây là những câu trả lời ngắn gọn mà NGƯỜI DÙNG có thể chọn để phản hồi lại câu hỏi của bạn.
-     VÍ DỤ: Nếu followup_questions có "Bạn thích phong cách áo khoác nào?", quick_reply có thể là ["Tôi muốn mua áo khoác công sở", "Áo khoác gì mà mặc phải ấm nha, chứ tôi sợ lạnh lắm", "Phong cách gì mặc lên nhìn giàu chứ tôi nghèo quá"]
+     VÍ DỤ: Nếu followup_questions có "Bạn thích phong cách áo khoác nào?", quick_reply có thể là "Tôi muốn mua áo khoác công sở" (khoảng 3 câu)
    - type "link": Nếu có đường link hữu ích (ví dụ: trang sản phẩm, hướng dẫn chọn size, liên hệ link facebook hổ trợ LUÔN LUÔN LÀ https://www.facebook.com/viethungprofile.personal/)
 
 6. Chỉ đặt "escalate_to_human" = true khi thực sự cần thiết
