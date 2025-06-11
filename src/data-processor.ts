@@ -3,8 +3,10 @@ import type { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import fs from "fs";
 import path from "path";
 import * as cheerio from "cheerio";
+import axios from "axios";
 
 const PRODUCT_JSON_PATH = path.join(__dirname, "../product-json/products.json");
+const PRODUCT_API_URL = "http://localhost:8080/products/public/all";
 
 function cleanHTML(html: string): string {
     if (!html) return "";
@@ -45,21 +47,37 @@ function buildProductText(product: any): string {
 }
 
 export async function processProductJSONs(vectorStore: MemoryVectorStore, jsonPath: string = PRODUCT_JSON_PATH) {
-    if (!fs.existsSync(jsonPath)) {
-        console.error(`Không tìm thấy file dữ liệu sản phẩm: ${jsonPath}`);
-        return vectorStore;
-    }
-    const raw = fs.readFileSync(jsonPath, "utf8");
     let json;
+
+    // Thử lấy dữ liệu từ API trước
     try {
-        json = JSON.parse(raw);
-    } catch (e) {
-        console.error("Lỗi khi parse JSON:", e);
-        return vectorStore;
+        console.log(`Đang tải dữ liệu sản phẩm từ API: ${PRODUCT_API_URL}`);
+        const response = await axios.get(PRODUCT_API_URL);
+        json = response.data;
+        console.log("✅ Lấy dữ liệu từ API thành công.");
+    } catch (error: any) {
+        console.warn(`❌ Không thể lấy dữ liệu từ API: ${error.message}`);
+        console.log("Đang sử dụng dữ liệu local từ file JSON...");
+
+        // Fallback: Đọc từ file local
+        if (!fs.existsSync(jsonPath)) {
+            console.error(`Không tìm thấy file dữ liệu sản phẩm: ${jsonPath}`);
+            return vectorStore;
+        }
+
+        const raw = fs.readFileSync(jsonPath, "utf8");
+        try {
+            json = JSON.parse(raw);
+            console.log("✅ Đọc dữ liệu từ file JSON local thành công.");
+        } catch (e) {
+            console.error("❌ Lỗi khi parse JSON:", e);
+            return vectorStore;
+        }
     }
+
     const products = Array.isArray(json.data) ? json.data : [];
     if (products.length === 0) {
-        console.warn("Không có sản phẩm nào trong dữ liệu JSON.");
+        console.warn("⚠️ Không có sản phẩm nào trong dữ liệu.");
         return vectorStore;
     }
 
@@ -79,7 +97,7 @@ export async function processProductJSONs(vectorStore: MemoryVectorStore, jsonPa
     });
 
     await vectorStore.addDocuments(documents);
-    console.log(`Đã thêm ${documents.length} sản phẩm vào vector store từ JSON.`);
+    console.log(`✅ Đã thêm ${documents.length} sản phẩm vào vector store.`);
     return vectorStore;
 }
 
