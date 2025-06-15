@@ -6,12 +6,14 @@ import { initChatModel, initEmbeddingModel } from "./models";
 import { loadData } from "./data-processor";
 import { createRetrieveTool } from "./tools";
 import { createStatefulAgent, getThreadConfig } from "./agent";
+import { createCommentModerationAgent } from "./moderation/agent";
 
 const app = express();
 
-// Global vars for agent
+// Global vars for agents
 let agent: any;
 let checkpointer: any;
+let moderationAgent: any;
 const threadMap = new Map<string, string>();
 
 // Middleware
@@ -19,17 +21,19 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../client")));
 
-// Initialize the agent
-export async function initializeAgent() {
-    console.log("Initializing Product Information Chatbot with LangGraph...");
+// Initialize the agents
+export async function initializeAgents() {
+    console.log("Initializing agents...");
 
-    // Check if API key is set
-    if (!process.env.GOOGLE_API_KEY) {
-        console.error("Error: GOOGLE_API_KEY environment variable is not set");
-        console.log("Please create a .env file with your Google API key");
+    // Check for API keys
+    if (!process.env.GOOGLE_API_KEY || !process.env.TAVILY_API_KEY) {
+        console.error("Error: GOOGLE_API_KEY or TAVILY_API_KEY environment variable is not set");
+        console.log("Please create a .env file with your Google and Tavily API keys");
         process.exit(1);
     }
 
+    // --- Initialize Product Chatbot Agent ---
+    console.log("Initializing Product Information Chatbot with LangGraph...");
     // Initialize models
     const llm = initChatModel();
     const embeddings = initEmbeddingModel();
@@ -48,6 +52,14 @@ export async function initializeAgent() {
     checkpointer = agentData.checkpointer;
 
     console.log("Product chatbot initialization complete!");
+
+    // --- Initialize Comment Moderation Agent ---
+    console.log("Creating comment moderation agent...");
+    moderationAgent = createCommentModerationAgent({
+        googleApiKey: process.env.GOOGLE_API_KEY,
+        tavilyApiKey: process.env.TAVILY_API_KEY,
+    });
+    console.log("Comment moderation agent initialization complete!");
 }
 
 // Helper function to extract JSON from code blocks if needed
@@ -213,6 +225,44 @@ app.post("/api/chat", async (req, res) => {
             error: "Không thể xử lý tin nhắn của bạn",
             errorMessage: error.message || "Đã xảy ra lỗi không xác định",
             suggestion: "Vui lòng thử lại sau hoặc liên hệ hỗ trợ"
+        });
+    }
+});
+
+// Comment Moderation API endpoint
+app.post("/api/moderate", async (req, res) => {
+    try {
+        const { comment } = req.body;
+
+        if (!comment || typeof comment !== 'string') {
+            return res.status(400).json({ error: "Trường 'comment' là bắt buộc và phải là một chuỗi" });
+        }
+
+        if (!moderationAgent) {
+            console.error("Moderation agent not initialized");
+            return res.status(503).json({ error: "Dịch vụ kiểm duyệt chưa sẵn sàng, vui lòng thử lại sau" });
+        }
+
+        console.log(`[Moderation API] Nhận yêu cầu kiểm duyệt cho bình luận: "${comment}"`);
+        const startTime = Date.now();
+
+        const result = await moderationAgent.moderateComment(comment);
+
+        const processingTime = Date.now() - startTime;
+        console.log(`[Moderation API] Hoàn thành kiểm duyệt (${processingTime}ms)`);
+
+        res.json({
+            ...result,
+            _meta: {
+                processingTime,
+            }
+        });
+
+    } catch (error: any) {
+        console.error("Lỗi xử lý kiểm duyệt bình luận:", error);
+        res.status(500).json({
+            error: "Không thể xử lý yêu cầu kiểm duyệt của bạn",
+            errorMessage: error.message || "Đã xảy ra lỗi không xác định",
         });
     }
 });
