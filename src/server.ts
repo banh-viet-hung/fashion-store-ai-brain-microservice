@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import path from "path";
+import axios from "axios";
 import { HumanMessage } from "@langchain/core/messages";
 import { initChatModel, initEmbeddingModel } from "./models";
 import { loadData } from "./data-processor";
@@ -232,31 +233,64 @@ app.post("/api/chat", async (req, res) => {
 // Comment Moderation API endpoint
 app.post("/api/moderate", async (req, res) => {
     try {
-        const { comment } = req.body;
+        const { id, comment, rating } = req.body;
+        const authorizationHeader = req.headers.authorization;
 
+        // --- VALIDATION ---
+        if (!id || typeof id !== 'number') {
+            return res.status(400).json({ error: "Trường 'id' là bắt buộc và phải là một số." });
+        }
+        if (rating !== undefined && typeof rating !== 'number') {
+            return res.status(400).json({ error: "Trường 'rating' phải là một số." });
+        }
         if (!comment || typeof comment !== 'string') {
             return res.status(400).json({ error: "Trường 'comment' là bắt buộc và phải là một chuỗi" });
         }
-
+        if (!authorizationHeader) {
+            return res.status(401).json({ error: "Yêu cầu thiếu Authorization header." });
+        }
         if (!moderationAgent) {
             console.error("Moderation agent not initialized");
             return res.status(503).json({ error: "Dịch vụ kiểm duyệt chưa sẵn sàng, vui lòng thử lại sau" });
         }
 
-        console.log(`[Moderation API] Nhận yêu cầu kiểm duyệt cho bình luận: "${comment}"`);
-        const startTime = Date.now();
-
+        // --- MODERATION LOGIC ---
+        console.log(`[Moderation API] Bắt đầu kiểm duyệt cho bình luận (ID: ${id}, Rating: ${rating ?? 'N/A'}): "${comment}"`);
         const result = await moderationAgent.moderateComment(comment);
+        console.log(`[Moderation API] Kết quả kiểm duyệt: pass=${result.pass}`);
 
-        const processingTime = Date.now() - startTime;
-        console.log(`[Moderation API] Hoàn thành kiểm duyệt (${processingTime}ms)`);
+        // --- UPDATE FEEDBACK SERVICE ---
+        const feedbackApiUrl = `http://localhost:8080/feedback/update/${id}`;
+        const feedbackBody = {
+            comment: comment,
+            rating: rating,
+            isBlocked: !result.pass,
+            blockReason: result.reason
+        };
 
-        res.json({
-            ...result,
-            _meta: {
-                processingTime,
-            }
-        });
+        console.log(`[Moderation API] Đang gọi PUT API tới: ${feedbackApiUrl}`);
+
+        try {
+            await axios.put(feedbackApiUrl, feedbackBody, {
+                headers: {
+                    'Authorization': authorizationHeader,
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            console.log(`[Moderation API] Cập nhật feedback thành công cho ID: ${id}`);
+            res.status(200).json({ success: true, message: "Bình luận đã được xử lý và cập nhật thành công." });
+
+        } catch (apiError: any) {
+            console.error(`[Moderation API] Lỗi khi gọi Feedback API: ${apiError.message}`);
+            // Gửi chi tiết lỗi từ service kia về client nếu có
+            const errorResponse = apiError.response ? apiError.response.data : { message: "Không thể kết nối đến dịch vụ feedback." };
+            res.status(502).json({
+                success: false,
+                message: "Kiểm duyệt thành công nhưng không thể cập nhật dịch vụ feedback.",
+                downstream_error: errorResponse
+            });
+        }
 
     } catch (error: any) {
         console.error("Lỗi xử lý kiểm duyệt bình luận:", error);
