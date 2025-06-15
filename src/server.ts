@@ -95,6 +95,45 @@ function extractJsonFromMessage(content: string): any | null {
     }
 }
 
+/**
+ * Xử lý kiểm duyệt và cập nhật feedback trong nền.
+ * @param id ID của bình luận
+ * @param comment Nội dung bình luận
+ * @param rating Điểm đánh giá
+ * @param authorizationHeader Header ủy quyền
+ */
+async function processModerationInBackground(id: number, comment: string, rating: number | undefined, authorizationHeader: string) {
+    try {
+        console.log(`[Background] Bắt đầu kiểm duyệt cho bình luận (ID: ${id})`);
+        const result = await moderationAgent.moderateComment(comment);
+        console.log(`[Background] Kết quả kiểm duyệt cho ID ${id}: pass=${result.pass}`);
+
+        const feedbackApiUrl = `http://localhost:8080/feedback/update/${id}`;
+        const feedbackBody = {
+            comment,
+            rating,
+            isBlocked: !result.pass,
+            blockReason: result.reason
+        };
+
+        console.log(`[Background] Đang gọi PUT API tới: ${feedbackApiUrl}`);
+        await axios.put(feedbackApiUrl, feedbackBody, {
+            headers: {
+                'Authorization': authorizationHeader,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        console.log(`[Background] Cập nhật feedback thành công cho ID: ${id}`);
+
+    } catch (error: any) {
+        console.error(`[Background] Lỗi khi xử lý cho feedback ID ${id}:`, error.message);
+        if (error.response) {
+            console.error(`[Background] Lỗi từ API feedback:`, error.response.data);
+        }
+    }
+}
+
 // Chat API endpoint
 app.post("/api/chat", async (req, res) => {
     try {
@@ -254,50 +293,26 @@ app.post("/api/moderate", async (req, res) => {
             return res.status(503).json({ error: "Dịch vụ kiểm duyệt chưa sẵn sàng, vui lòng thử lại sau" });
         }
 
-        // --- MODERATION LOGIC ---
-        console.log(`[Moderation API] Bắt đầu kiểm duyệt cho bình luận (ID: ${id}, Rating: ${rating ?? 'N/A'}): "${comment}"`);
-        const result = await moderationAgent.moderateComment(comment);
-        console.log(`[Moderation API] Kết quả kiểm duyệt: pass=${result.pass}`);
+        // --- RESPOND IMMEDIATELY ---
+        // Trả lời ngay lập tức để không bắt frontend phải chờ
+        res.status(202).json({
+            success: true,
+            message: "Cảm ơn rất nhiều vì bạn đã gửi đánh giá. Chúng tôi sẽ sớm kiểm duyệt đánh giá của bạn"
+        });
 
-        // --- UPDATE FEEDBACK SERVICE ---
-        const feedbackApiUrl = `http://localhost:8080/feedback/update/${id}`;
-        const feedbackBody = {
-            comment: comment,
-            rating: rating,
-            isBlocked: !result.pass,
-            blockReason: result.reason
-        };
-
-        console.log(`[Moderation API] Đang gọi PUT API tới: ${feedbackApiUrl}`);
-
-        try {
-            await axios.put(feedbackApiUrl, feedbackBody, {
-                headers: {
-                    'Authorization': authorizationHeader,
-                    'Content-Type': 'application/json'
-                }
-            });
-
-            console.log(`[Moderation API] Cập nhật feedback thành công cho ID: ${id}`);
-            res.status(200).json({ success: true, message: "Bình luận đã được xử lý và cập nhật thành công." });
-
-        } catch (apiError: any) {
-            console.error(`[Moderation API] Lỗi khi gọi Feedback API: ${apiError.message}`);
-            // Gửi chi tiết lỗi từ service kia về client nếu có
-            const errorResponse = apiError.response ? apiError.response.data : { message: "Không thể kết nối đến dịch vụ feedback." };
-            res.status(502).json({
-                success: false,
-                message: "Kiểm duyệt thành công nhưng không thể cập nhật dịch vụ feedback.",
-                downstream_error: errorResponse
-            });
-        }
+        // --- PROCESS IN BACKGROUND ---
+        // Gọi hàm xử lý ngầm mà không cần `await`
+        processModerationInBackground(id, comment, rating, authorizationHeader);
 
     } catch (error: any) {
-        console.error("Lỗi xử lý kiểm duyệt bình luận:", error);
-        res.status(500).json({
-            error: "Không thể xử lý yêu cầu kiểm duyệt của bạn",
-            errorMessage: error.message || "Đã xảy ra lỗi không xác định",
-        });
+        console.error("Lỗi khi nhận yêu cầu kiểm duyệt:", error);
+        // Đảm bảo không gửi response khác nếu đã gửi rồi
+        if (!res.headersSent) {
+            res.status(500).json({
+                error: "Không thể xử lý yêu cầu kiểm duyệt của bạn",
+                errorMessage: error.message || "Đã xảy ra lỗi không xác định",
+            });
+        }
     }
 });
 
