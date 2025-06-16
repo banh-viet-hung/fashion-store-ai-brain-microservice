@@ -17,6 +17,9 @@ let checkpointer: any;
 let moderationAgent: any;
 const threadMap = new Map<string, string>();
 
+// Format reminder to be appended to each user query
+const FORMAT_REMINDER = `NHẮC NHỞ QUAN TRỌNG: Phản hồi của bạn PHẢI là một đối tượng JSON theo đúng schema đã định nghĩa ở PROMPT với các trường bắt buộc (answer, response_type) và các trường khác khi phù hợp. KHÔNG trả về text thường, markdown, hoặc bọc JSON trong code block. CHỈ trả về JSON thuần theo định dạng được chỉ định trong PROMPT.`;
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -155,10 +158,14 @@ app.post("/api/chat", async (req, res) => {
 
         console.log(`[Chat API] Xử lý tin nhắn từ người dùng '${userId}': "${message}"`);
 
-        // Invoke agent with message
+        // Append format reminder to the user message
+        const enhancedMessage = `${message}\n\n${FORMAT_REMINDER}`;
+
+        console.log(`[Chat API] Enhanced message: "${enhancedMessage}"`);
+        // Invoke agent with enhanced message
         const startTime = Date.now();
         const result = await agent.invoke(
-            { messages: [new HumanMessage(message)] },
+            { messages: [new HumanMessage(enhancedMessage)] },
             config
         );
         const processingTime = Date.now() - startTime;
