@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!productRef.id) continue;
 
             try {
-                const response = await fetch(`http://localhost:8080/products/${productRef.id}`);
+                const response = await fetch(`https://fashion-store-backend-u0pj.onrender.com/products/${productRef.id}`);
                 if (!response.ok) {
                     console.error(`Failed to fetch product with ID ${productRef.id}. Status: ${response.status}`);
                     continue;
