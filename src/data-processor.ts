@@ -6,7 +6,7 @@ import * as cheerio from "cheerio";
 import axios from "axios";
 
 const PRODUCT_JSON_PATH = path.join(__dirname, "../product-json/products.json");
-const PRODUCT_API_URL = "https://fashion-store-backend-u0pj.onrender.com/products/public/all";
+const PRODUCT_API_URL = "http://localhost:8080/products/public/all";
 
 function cleanHTML(html: string): string {
     if (!html) return "";

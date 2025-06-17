@@ -85,7 +85,7 @@ Các trường hợp CẦN ĐẶC BIỆT CHÚ Ý:
 Trả về JSON với format chính xác như sau:
 {{
   "pass": true/false,
-  "reason": "lý do cụ thể nếu không pass, null nếu pass"
+  "reason": "lý do ngắn gọn xúc tích nếu không pass, null nếu pass"
 }}
 
 Tiêu chí đánh giá:
@@ -93,7 +93,7 @@ Tiêu chí đánh giá:
 - pass: false nếu bình luận có giọng điệu chế giễu, mỉa mai gây tổn thương
 - pass: false nếu bình luận sử dụng các từ như "backy", "bắc kỳ" và các biến thể khác
 - pass: true nếu bình luận bình thường, tích cực, hoặc từ lóng được dùng theo nghĩa tích cực/trung tính
-- reason: giải thích chi tiết về đánh giá dựa trên ngữ điệu và từ ngữ (nếu không pass)
+- reason: ĐẶC BIỆT QUAN TRỌNG - Lý do phải CỰC KỲ NGẮN GỌN (tối đa 10-15 từ), đi thẳng vào trọng tâm vấn đề. Lý do này sẽ hiển thị trực tiếp cho người dùng.
 `);
 
     return {
@@ -105,7 +105,7 @@ Tiêu chí đánh giá:
             const lowerComment = comment.toLowerCase();
             if (regionalTerms.some(term => lowerComment.includes(term))) {
                 console.log("⚠️ [Moderation] Detected regional discrimination term");
-                return { pass: false, reason: "Bình luận có sử dụng từ ngữ mang tính phân biệt vùng miền" };
+                return { pass: false, reason: "Phân biệt vùng miền" };
             }
 
             // 2. Initial analysis
@@ -119,7 +119,7 @@ Tiêu chí đánh giá:
                 return { pass: true, reason: null };
             }
             if (analysis === "TOXIC") {
-                return { pass: false, reason: "Bình luận chứa nội dung rõ ràng độc hại, toxic hoặc tiêu cực" };
+                return { pass: false, reason: "Nội dung độc hại/tiêu cực" };
             }
 
             // 3. Needs research
@@ -158,12 +158,12 @@ Tiêu chí đánh giá:
                     throw new Error("No JSON found in response");
                 } catch (error) {
                     console.error("❌ [Moderation] JSON parsing error:", error);
-                    return { pass: false, reason: "Lỗi trong việc phân tích bình luận" };
+                    return { pass: false, reason: "Lỗi phân tích" };
                 }
             }
 
             // Fallback
-            return { pass: true, reason: "Không xác định được, tạm thời chấp nhận" };
+            return { pass: true, reason: null };
         }
     };
 } 

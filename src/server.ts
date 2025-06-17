@@ -111,7 +111,7 @@ async function processModerationInBackground(id: number, comment: string, rating
         const result = await moderationAgent.moderateComment(comment);
         console.log(`[Background] Kết quả kiểm duyệt cho ID ${id}: pass=${result.pass}`);
 
-        const feedbackApiUrl = `https://fashion-store-backend-u0pj.onrender.com/feedback/update/${id}`;
+        const feedbackApiUrl = `http://localhost:8080/feedback/update/${id}`;
         const feedbackBody = {
             comment,
             rating,
